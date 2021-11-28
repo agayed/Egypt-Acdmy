@@ -1126,14 +1126,19 @@ h2 {
   margin-right: 10px;
 }
 .div1{
-  background-color: rgb(255, 255, 128);}
+  background-color: rgb(255, 255, 128);
+}
   .div2{
     background-color: rgb(253, 253, 234);
-    padding: 20px;
-    box-shadow:
-         inset 0 -3em 3em rgba(0,0,0,0.1),
-               0 0  0 2px rgb(255,255,255),
-               0.3em 0.3em 1em rgba(0,0,0,0.3);}
+ padding-right: 20px;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);}
+             .div3{
+               margin-right: 250px;
+               
+             }
   
  .div-h1{
    color: #e80000;
