@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+          <head>
+        
+                    <title>دروس PHP</title>
+                    <meta charset="utf-8">
+                    <meta name="description" content="PHP Tutorial,  The PHP Hypertext Preprocessor (PHP) is a programming language that allows web developers to create dynamic content that interacts with databases. PHP is basica">
+                    <meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code">
+                    <link rel="canonical" href="https://www.tutorialspoint.com/php/index.htm">
+                    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+                    <script src="https://rules.quantcount.com/rules-p-54Nt-1NAaEEe0.js" async=""></script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-EX9ZP4VY84&amp;l=dataLayer&amp;cx=c"></script><script src="/themes/js/prism-core.min.js"></script>
+                    
+                    
+                    <link rel="stylesheet" href="https://wiki.hsoub.com/load.php?lang=ar&modules=ext.pygments%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cskins.vector.styles.hsoub&only=styles&skin=vector">
+                    <link rel="stylesheet" href="style-min-v1.css">
+<link rel="stylesheet" href="load.css">
+
+                    <style>
+                     .mw-editfont-monospace{font-family:monospace,monospace}.mw-editfont-sans-serif{font-family:sans-serif}.mw-editfont-serif{font-family:serif} .mw-editfont-monospace,.mw-editfont-sans-serif,.mw-editfont-serif{font-size:13px; }.mw-editfont-monospace.oo-ui-textInputWidget,.mw-editfont-sans-serif.oo-ui-textInputWidget,.mw-editfont-serif.oo-ui-textInputWidget{font-size:inherit}.mw-editfont-monospace.oo-ui-textInputWidget > .oo-ui-inputWidget-input,.mw-editfont-sans-serif.oo-ui-textInputWidget > .oo-ui-inputWidget-input,.mw-editfont-serif.oo-ui-textInputWidget > .oo-ui-inputWidget-input{font-size:13px}.mw-editfont-monospace.oo-ui-textInputWidget > input.oo-ui-inputWidget-input,.mw-editfont-sans-serif.oo-ui-textInputWidget > input.oo-ui-inputWidget-input,.mw-editfont-serif.oo-ui-textInputWidget > input.oo-ui-inputWidget-input{min-height:32px}
+                     .ve-init-mw-progressBarWidget{height:1em;overflow:hidden;margin:0 25%}.ve-init-mw-progressBarWidget-bar{height:1em;width:0} .ve-init-mw-progressBarWidget{background-color:#fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:0.875em;border:1px solid #36c;border-radius:0.875em;box-shadow:0 1px 1px rgba(0,0,0,0.15)}.ve-init-mw-progressBarWidget-bar{background-color:#36c;height:0.875em}
+                     @media screen {
+                        .toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;font-size:94%}}</style>
+
+<style>
+   .ve-init-mw-tempWikitextEditorWidget{border:0;padding:0;color:inherit;line-height:1.5em;width:100%;-moz-tab-size:4;tab-size:4; }.ve-init-mw-tempWikitextEditorWidget:focus{outline:0;padding:0}.ve-init-mw-tempWikitextEditorWidget::selection{background:rgba(109,169,247,0.5); }</style>
+
+
+<style>
+   .ve-activated .ve-init-mw-desktopArticleTarget-editableContent #toc,.ve-activated #siteNotice,.ve-activated .mw-indicators,.ve-activated #t-print,.ve-activated #t-permalink,.ve-activated #p-coll-print_export,.ve-activated #t-cite,.ve-deactivating .ve-ui-surface,.ve-active .ve-init-mw-desktopArticleTarget-editableContent,.ve-active .ve-init-mw-tempWikitextEditorWidget{display:none} .ve-activating .ve-ui-surface{height:0;padding:0 !important; overflow:hidden} .ve-loading #content > :not(.ve-init-mw-desktopArticleTarget-loading-overlay), .ve-activated .ve-init-mw-desktopArticleTarget-uneditableContent{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;opacity:0.5}.ve-activated #firstHeading{ -webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;pointer-events:auto;cursor:text}.ve-activated #firstHeading a{ pointer-events:none}.ve-activated #catlinks{cursor:pointer}.ve-activated #catlinks a{opacity:1}.ve-activated #content{position:relative} .ve-init-mw-desktopArticleTarget-loading-overlay{position:absolute;top:1.25em;right:0;left:0;z-index:1;margin-top:-0.5em}.ve-init-mw-desktopArticleTarget-toolbarPlaceholder{transition:height 250ms ease;height:0; } .oo-ui-element-hidden{display:none !important; }  .mw-editsection{ unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection:before{content:'\200B'}.mw-editsection a{white-space:nowrap}.mw-editsection-divider{color:#54595d}  .ve-init-mw-desktopArticleTarget-toolbarPlaceholder{border-bottom:1px solid #c8ccd1;box-shadow:0 1px 1px 0 rgba(0,0,0,0.1)}.ve-init-mw-desktopArticleTarget-toolbarPlaceholder-open{height:42px} .ve-init-mw-desktopArticleTarget-toolbar,.ve-init-mw-desktopArticleTarget-toolbarPlaceholder{font-size:0.875em; margin:-1.14em -1.14em 1.14em -1.14em; }@media screen and (min-width:982px){ .skin-vector-legacy .ve-init-mw-desktopArticleTarget-toolbar,.skin-vector-legacy .ve-init-mw-desktopArticleTarget-toolbarPlaceholder{ margin:-1.43em -1.71em 1.43em -1.71em}}</style>
+<!-- ========================= -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C++, jQuery, Bootstrap, C#, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:description" content="W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="https://www.w3schools.com/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="https://www.w3schools.com/lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="https://www.w3schools.com/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="preload" href="https://www.w3schools.com/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+<link rel="stylesheet" href="w3schools30.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'GTM-WJ88MZ5');
+ga('send', 'pageview');
+</script>
+
+<script data-cfasync="false" type="text/javascript">
+var k42 = false;
+
+k42 = true;
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+    window.snigelPubConf = {
+    "adengine": {
+
+      "activeAdUnits": ["main_leaderboard", "sidebar_top", "bottom_left", "bottom_right"]
+
+  }
+}
+</script>
+<script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js" type="text/javascript"></script>
+<script src="https://www.w3schools.com/lib/my-learning.js?v=1.0.2"></script>
+<script type='text/javascript'>
+var stickyadstatus = "";
+function fix_stickyad() {
+  document.getElementById("stickypos").style.position = "sticky";
+  var elem = document.getElementById("stickyadcontainer");
+  if (!elem) {return false;}
+  if (document.getElementById("skyscraper")) {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("skyscraper"), "width").replace("px", ""));  
+    }
+  else {
+    var skyWidth = Number(w3_getStyleValue(document.getElementById("right"), "width").replace("px", ""));  
+  }
+  elem.style.width = skyWidth + "px";
+  if (window.innerWidth <= 992) {
+    elem.style.position = "";
+    elem.style.top = stickypos + "px";
+    return false;
+  }
+  var stickypos = document.getElementById("stickypos").offsetTop;
+  var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  var adHeight = Number(w3_getStyleValue(elem, "height").replace("px", ""));
+  if (stickyadstatus == "") {
+    if ((stickypos - docTop) < 60) {
+      elem.style.position = "fixed";
+      elem.style.top = "60px";
+      stickyadstatus = "sticky";
+      document.getElementById("stickypos").style.position = "sticky";
+
+    }
+  } else {
+    if ((docTop + 60) - stickypos < 0) {  
+      elem.style.position = "";
+      elem.style.top = stickypos + "px";
+      stickyadstatus = "";
+      document.getElementById("stickypos").style.position = "static";
+    }
+  }
+  if (stickyadstatus == "sticky") {
+    if ((docTop + adHeight + 60) > document.getElementById("footer").offsetTop) {
+      elem.style.position = "absolute";
+      elem.style.top = (document.getElementById("footer").offsetTop - adHeight) + "px";
+      document.getElementById("stickypos").style.position = "static";
+    } else {
+        elem.style.position = "fixed";
+        elem.style.top = "60px";
+        stickyadstatus = "sticky";
+        document.getElementById("stickypos").style.position = "sticky";
+    }
+  }
+}
+function w3_getStyleValue(elmnt,style) {
+  if (window.getComputedStyle) {
+    return window.getComputedStyle(elmnt,null).getPropertyValue(style);
+  } else {
+    return elmnt.currentStyle[style];
+  }
+}
+</script>
+<style>  
+.w3-third .bigbtn {
+ border:1px solid #e3e3e3;
+ background-color:#E7E9EB;
+ color:#555;
+ margin-bottom:16px;
+ width:100%;
+ padding:20px 0;
+ text-align: center;
+ vertical-align: middle;
+ display: inline-block;
+ text-decoration:none !important;
+ border-radius:5px;
+}
+ 
+.bigbtn:hover, .bigbtn2:hover {
+  background-color: #282A35; 
+  color: #ffffff !important;
+  border: 1px solid #555;
+}
+
+@media screen and (max-width: 992px){
+.bigbtn {
+  display: block;
+  width: 100%;
+}
+}
+.ribbon-vidx {
+  width: 60px;
+  font-size:14px;
+  padding: 4px;
+  position: absolute;
+  left:-20px;
+  top:-15px;
+  text-align: center;
+  color:black;
+  border-radius:25px;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  transform: rotate(-20deg);
+}
+
+.ws-yellow-hover:hover {
+  background-color:#fff080!important;
+  color:black!important;
+}
+
+.ws-hover-black:hover {
+  background-color:black!important
+}
+.topnav {
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
+    background-color: #282A35;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.w3-card, .w3-card-2 {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+</style>
+
+
+
+
+          </head>
+<body style="margin-bottom: 500px;">
+          <!-- <header id="header" class="">
+                    <div class="pop-modal overlay-pop popdiv" style="display: none;">
+                    <div class="modal-window small">
+                    <span class="close" title="أغلق"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">×</font></font></span>
+                    <div class="pop-content">
+                    </div>
+                    <span class="msg"></span>
+                    </div>
+                    </div>
+                    <div class="wrap_loader">
+                    <div class="imgLoader"></div>
+                    </div>
+                    <input type="hidden" id="vu" name="vu" value="">
+                    <div class="mui-appbar mui-container-fulid top-menu">
+                    <div class="mui-container">
+                    <div class="top-menu-item home">
+                    <a href="index.html" target="_blank" title="TutorialsPoint - الصفحة الرئيسية"><i class="fal fa-home"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">الصفحة الرئيسية</font></font></span></a>
+                    </div>
+                    <div class="top-menu-item qa">
+                    <a href="index.html" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">وظائف</font></font></span></a>
+                    </div>
+                    <div class="top-menu-item tools">
+                    <a href="#" target="_blank" title="الأدوات - أدوات التطوير والاختبار عبر الإنترنت"><i class="fal fa-cogs"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">أدوات</font></font></span></a>
+                    </div>
+                    <div class="top-menu-item coding-ground">
+                    <a href="#" target="_blank" title="أرض التشفير - IDE ومحطة مجانية على الإنترنت"><i class="fal fa-code"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">أرضية الترميز </font></font></span></a> 
+                    </div>
+                    <div class="top-menu-item current-affairs">
+                    <a href="#" target="_blank" title="الشؤون الجارية اليومية"><i class="fal fa-layer-plus"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">الشؤون الحالية</font></font></span></a>
+                    </div>
+                    <div class="top-menu-item upsc-notes">
+                    <a href="#" target="_blank" title="ملاحظات امتحانات UPSC IAS - TutorialsPoint"><i class="fal fa-user-tie"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ملاحظات UPSC</font></font></span></a>
+                    </div>      
+                    <div class="top-menu-item articles">
+                    <a href="#" target="_blank" title="أفضل المدرسين عبر الإنترنت - Tutor Connect"><i class="fal fa-user"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">مدرسون عبر الإنترنت</font></font></span></a>
+                    </div>
+                    <div class="top-menu-item whiteboard">
+                    <a href="#" target="_blank" title="السبورة الحرة على الإنترنت"><i class="fal fa-chalkboard"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">السبورة</font></font></span></a>
+                    </div>
+                    <div class="top-menu-item articles">
+                    <a href="#" target="_blank" title="Tutorx - أفضل تطبيق تعليمي" rel="nofollow"><i class="fal fa-video"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">توتوريكس</font></font></span></a> 
+                    </div>
+                    <div class="top-menu-item net-meeting">
+                    <a href="#" target="_blank" title="دروس تسجيل الدخول"><i class="fal fa-sign-in-alt"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">تسجيل الدخول</font></font></span></a> 
+                    </div>      
+                    <div class="social-menu-item">
+                    <a href="#" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="#" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ تويتر"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" rel="nofollow" data-placement="bottom" title="البرنامج التعليمي"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" rel="nofollow" data-placement="bottom" title="البرنامج التعليمي"><i class="fab fa-youtube"></i></a>
+                    </div>        
+                    </div>
+                    </div>
+                    <div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+                    <div class="mui-container">
+                    <div class="left-menu">
+                    <a href="#" title="البرنامج التعليمي">
+                    <img class="tp-logo" alt="البرنامج التعليمي" src="logo.png">
+                    </a>
+                    <div class="mui-dropdown">
+                    <a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">فئات </font></font><span class="mui-caret"></span></span></a>            
+                    <ul class="mui-dropdown__menu cat-menu">
+                    <li>
+                    <ul>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس أكاديمية</font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> البيانات الضخمة والتحليلات </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> برمجة الحاسوب </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> علوم الكمبيوتر </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> قواعد بيانات </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> DevOps </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> التسويق الرقمي </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس الهندسة </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> منهاج الامتحانات </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> المعالم الشهيرة </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس امتحانات GATE</font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> أحدث التقنيات </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> التعلم الالي </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> تطوير الحاسوب المركزي </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس الإدارة </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس الرياضيات</font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> تقنيات مايكروسوفت </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس متنوعة </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> تطوير المحمول </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> تقنيات جافا </font></font></a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> تقنيات بايثون </font></font></a></li>
+                    <li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس SAP </font></font></a></li>
+                    <li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">نصوص البرمجة </font></font></a></li>
+                    <li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> القراءة المختارة </font></font></a></li>
+                    <li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> جودة البرمجيات </font></font></a></li>
+                    <li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> المهارات اللينة </font></font></a></li>
+                    <li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس الاتصالات </font></font></a></li>
+                    <li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> امتحانات UPSC IAS </font></font></a></li>
+                    <li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> تطوير الشبكة </font></font></a></li>
+                    <li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> دروس رياضية </font></font></a></li>
+                    <li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> تقنيات XML </font></font></a></li>
+                    <li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> متعدد اللغات</font></font></a></li>
+                    <li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> اسئلة المقابلة</font></font></a></li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <div class="clear"></div>
+                    </div> 
+                    </div>
+                    <div class="right-menu">
+                    <div class="toc-toggle">
+                    <a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <div class="mobile-search-btn">
+                    <a href="#"><i class="fal fa-search"></i></a>
+                    </div>
+                    <div class="search-box-wrap">
+                              <div class="search-box" style="">
+                                        <div>
+                                                  <input class="input" type="text" id="search-strings" name="key" placeholder="ابحث عن أحدث الدورات والكتب الإلكترونية والحزم الأولية ..." autocomplete="off">
+                                                  <button id="btnSearch"><i class="fa fa-search" title="بحث"></i></button>
+                                        </div>
+                              </div>		
+                              <div class="search-box" id="search-results" style="display: none;"></div>
+                              <div class="clear"></div>
+                              <script>
+                                        $('#search-strings').keyup(function () {
+                                                  var keyword = $('#search-strings').val();
+                                                  if (keyword != "" && keyword.length > 2) {
+                                                            $.ajax({
+                                                                      url:"#",
+                                                                      method: "POST",
+                                   type: 'POST',
+                                                                      dataType: "json",
+                                   cache:false,
+                                                                      data: {
+                                                                                'keyword': keyword
+                                                                      },
+                                                                      error: function (err) {
+                                                                                console.log ( err );
+                                                                      },
+                                                                      success: function (data) {
+                                                                                if (data.length > 0) {
+                                                                      var str = '<div class="search-overlay"><ul>';
+                                                                      data.forEach((item) => {
+                                                                         var iconStr = '<i class="fa fa-play-circle"></i>';
+                                                                         if(item.type=='E'){
+                                                                                  iconStr = '<i class="fa fa-file-pdf"></i>';
+                                                                         }
+                                                                         if(item.type=='B'){
+                                                                                  iconStr = '<i class="fa fa-cubes"></i>';
+                                                                         }
+                                                                         if(item.type=='A' || item.type=='I' || item.type=='P'){ 
+                                                                                  iconStr = '<i class="fa fa-user"></i>';
+                                                                         }
+                                                                         str = str + '<a href="'+item.url+'" target="_blank"><li class="clsHeadQuestion">'+iconStr+' '+item.name+'</li></a>'; 
+                                                                      });
+                                                                      str = str + '</ul><br/></div><div class="clear"></div>';
+                                                                                          $('#search-results').show();
+                                                                                          $('#search-results').html(str);
+                                                                                } else {
+                                                                                          $('#search-results').hide();
+                                                                                          $('#search-results').html('');
+                                                                                }
+                                                                      }
+                                                            });
+                                                  }else{
+                                                            $('#search-results').hide();
+                                                            $('#search-results').html('');
+                                                  }
+                                        });
+                               $('#btnSearch').click(function(){
+                                           var keyword = $('#search-strings').val();
+                                           window.location.href = "#"+keyword;
+                               });
+                               $(document).mouseup(function(e) 
+                               {
+                                         var container = $('#search-results');            
+                                         if (!container.is(e.target) && container.has(e.target).length === 0) 
+                                         {
+                                                   container.hide();
+                                         }
+                               });
+                              </script>
+                    </div>
+                    <div class="menu-btn videos-btn">
+                    <a href="#"><i class="fa fa-location-arrow"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">س / أ</font></font></span></a>
+                    </div>
+                    <div class="menu-btn library-btn">
+                    <a href="#"><i class="fa fa-books"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">مكتبة</font></font></span></a>
+                    </div>
+                    <div class="menu-btn ebooks-btn">
+                    <a href="#"><i class="fa fa-book-reader"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">كتب إلكترونية</font></font></span></a>
+                    </div>
+                    <div class="menu-btn videos-btn">
+                    <a href="#"><i class="fa fa-video"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">الدورات</font></font></span></a> 
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </header>   -->
+          
+<!-- ===================================================================== -->
+                
+
+
+<div  class="w3-bar w3-card-2 notranslate" style="position: relative;z-index: 4;font-size: 18px;background-color: white;color:#282A35;padding-left:12px;padding-right:16px;font-family: 'Source Sans Pro', sans-serif;">
+
+   <style>
+   @media screen and (max-width: 1080px) {
+     .ws-hide-1080 {
+       display: none !important;
+     }
+   }
+   
+   
+   </style>
+   <div  dir="rtl" >
+     <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:116px">حول الموقع </a>
+     <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="" onclick="w3_open_nav('references')" id="navbtn_references" title="References" style="width:132px">تواصل معنا</a>
+     <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24 ws-hide-800" href="" onclick="w3_open_nav('exercises')" id="navbtn_exercises" title="Exercises" style="width:118px">معلومات تهمك </a>
+     <a class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex" href="" title="Video Tutorials" onclick="ga('send', 'event', 'Videos' , 'fromTopnavMain')">مشاريع تهمك </a>
+   
+     <a class="w3-bar-item w3-button bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px">Menu <i class='fa fa-caret-up' style="display:none"></i></a>
+   
+     <div  id="loginactioncontainer" class="w3-right w3-padding-16" style="margin-left:50px">
+       <div id="mypagediv"></div>
+         <!-- <button id="w3loginbtn" style="border:none;display:none;cursor:pointer" class="login w3-right w3-hover-greener" onclick='w3_open_nav("login")'>LOG IN</button>-->
+         <a id="w3loginbtn" class="w3-bar-item w3-btn bar-item-hover w3-right" style="display:none;width:130px;background-color:#04AA6D;color:white;border-radius:25px;" href="" target="_self">تسجيل الدخول</a>
+     </div>
+   
+     <div class="w3-right w3-padding-16">
+       <!--<a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hover-white w3-hide-large w3-hide-medium" href="javascript:void(0)" onclick="w3_open()" title="Menu"><i class='fa'>&#xf0c9;</i></a>
+       -->
+       <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex" style="width: 140px; border-radius: 25px; margin-right: 15px;" href="" target="_blank" id="cert_navbtn" onclick="ga('send', 'event', 'Courses' , 'Clicked on courses in Main top navigation');" title="Courses">دورات مدفوعة</a>
+       <a class="w3-bar-item w3-button bar-item-hover w3-right ws-hide-900 w3-hide-small barex ws-pink" style="border-radius: 25px; margin-right: 15px;" href="" target="_blank" onclick="ga('send', 'event', 'spacesFromTopnavMain', 'click');" title="Get Your Own Website With W3shools Spaces">دروس جديدة <span class="ribbon-topnav ws-hide-1066">تحت الإنشاء</span></a>
+     </div>  
+   </div>
+   </div>
+   <div style='display:none;position:absolute;z-index:4;right:52px;height:44px;background-color:#282A35;letter-spacing:normal;' id='googleSearch'>
+     <div class='gcse-search'></div>
+   </div>
+   <div style='display:none;position:absolute;z-index:3;right:111px;height:44px;background-color:#282A35;text-align:right;padding-top:9px;' id='google_translate_element'></div>
+   
+   <div class='w3-card-2 topnav notranslate' id='topnav' >
+     <div style="overflow:auto;" >
+       <div dir="rtl" class="w3-bar-item w3-right" style="width:100%;overflow:hidden;height:44px;">
+         <!-- <a href='javascript:void(0);' class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' onclick='open_menu()' title='Menu'></a> -->
+         <!-- <a href='/default.asp' class='topnav-icons fa fa-home w3-left w3-bar-item w3-button' title='Home'></a> -->
+         
+         <a class="w3-bar-item w3-button A" href='index.html' title='HTML Tutorial' style="padding-left:18px!important;padding-right:18px!important;">الرئيسية</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='CSS Tutorial'>HTML-CSS  دورة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='JavaScript Tutorial'> BOOTSTRAPدورة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='SQL Tutorial'>JAVSCRIPT دورة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='Python Tutorial'>REACT دورة</a>
+         <a class="w3-bar-item w3-button A" href='#' title='PHP Tutorial'>PHP دورة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='Bootstrap Tutorial'> MY-SQLدورة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='How To'>أخبار عالم البرمجة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='W3.CSS Tutorial'>أهم الأخبار المحلية والعالمية</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='Java Tutorial'>أهم المواقع التعليمية </a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='jQuery Tutorial'>بوابة تكنولوجيا المعلومات</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='C++ Tutorial'>أهم لغات البرمجة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='C# Tutorial'>مقالات عامة</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='R Tutorial'>خطة الموقع</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='React Tutorial'>أشياء قد تهمك</a>
+         <a class="w3-bar-item w3-button" href='تحت_الإنشاء.html' title='Kotlin Tutorial'>لهذا أنشأنا الموقع</a>
+         <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='gSearch(this)' title='Search W3Schools'>&#xe802;</a>
+         <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='gTra(this)' title='Translate W3Schools'>&#xe801;</a>
+         <a href='javascript:void(0);' class='topnav-icons fa w3-right w3-bar-item w3-button' onclick='changecodetheme(this)' title='Toggle Dark Code Examples'>&#xe80b;</a>
+   
+   
+         <!--
+         <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>EXERCISES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
+         -->
+         
+       </div>
+       
+   
+   
+   <nav id="nav_tutorials" class="w3-hide-small" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;">
+    <div class="w3-content" style="max-width:1100px;font-size:18px">
+    <span onclick="w3_close_nav('tutorials')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white sectionxsclosenavspan" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+    <div class="w3-row-padding w3-bar-block">
+     <div class="w3-container" style="padding-left:13px">
+      <h2 style="color:#FFF4A3;"><b>القائمة الرئيسة للدورات</b></h2>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top">HTML and CSS</h3>
+      <a class="w3-bar-item w3-button" href="/html/default.asp">Learn HTML</a>
+      <a class="w3-bar-item w3-button" href="/css/default.asp">Learn CSS</a>
+      <a class="w3-bar-item w3-button" href="/css/css_rwd_intro.asp" title="Responsive Web Design">Learn RWD</a>
+      <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
+      <a class="w3-bar-item w3-button" href="/w3css/default.asp">Learn W3.CSS</a>
+      <a class="w3-bar-item w3-button" href="/colors/default.asp">Learn Colors</a>
+      <a class="w3-bar-item w3-button" href="/icons/default.asp">Learn Icons</a>
+      <a class="w3-bar-item w3-button" href="/graphics/default.asp">Learn Graphics</a>
+      <a class="w3-bar-item w3-button" href='/graphics/svg_intro.asp'>Learn SVG</a>
+      <a class="w3-bar-item w3-button" href='/graphics/canvas_intro.asp'>Learn Canvas</a>
+      <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a>
+      <a class="w3-bar-item w3-button" href="/sass/default.php">Learn Sass</a>   
+      <div class="w3-hide-large w3-hide-small">
+      <h3 class="w3-margin-top">Data Analytics</h3>
+      <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+      <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+      <a class="w3-bar-item w3-button" href="/datascience/default.asp">Learn Data Science</a> 
+      <a class="w3-bar-item w3-button" href="/python/numpy/default.asp">Learn NumPy</a>       
+      <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>    
+      <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+      <a class="w3-bar-item w3-button" href="/python/matplotlib_intro.asp">Learn Matplotlib</a>    
+      <a class="w3-bar-item w3-button" href="/statistics/index.php">Learn Statistics</a>
+      <a class="w3-bar-item w3-button" href="/excel/index.php">Learn Excel</a>
+   
+      <h3 class="w3-margin-top">XML Tutorials</h3>
+      <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a>
+      <a class="w3-bar-item w3-button" href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+      <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
+      <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+      <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+      <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a>
+      <a class="w3-bar-item w3-button" href='/xml/xpath_intro.asp'>Learn XPath</a>
+      <a class="w3-bar-item w3-button" href='/xml/xquery_intro.asp'>Learn XQuery</a>
+     </div>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top">JavaScript</h3>
+      <a class="w3-bar-item w3-button" href="/js/default.asp">Learn JavaScript</a>
+      <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a>
+      <a class="w3-bar-item w3-button" href="/react/default.asp">Learn React</a>
+      <a class="w3-bar-item w3-button" href="/angular/default.asp">Learn AngularJS</a>
+      <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp">Learn JSON</a>
+      <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp">Learn AJAX</a>
+      <a class="w3-bar-item w3-button" href="/appml/default.asp">Learn AppML</a>
+      <a class="w3-bar-item w3-button" href="/w3js/default.asp">Learn W3.JS</a>
+   
+      <h3 class="w3-margin-top">Programming</h3>
+      <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
+      <a class="w3-bar-item w3-button" href="/java/default.asp">Learn Java</a>
+      <a class="w3-bar-item w3-button" href="/cpp/default.asp">Learn C++</a>
+      <a class="w3-bar-item w3-button" href="/cs/index.php">Learn C#</a>
+      <a class="w3-bar-item w3-button" href="/r/default.asp">Learn R</a>
+      <a class="w3-bar-item w3-button" href="/kotlin/index.php">Learn Kotlin</a>
+      <a class="w3-bar-item w3-button" href="/go/index.php">Learn Go</a>
+     </div> 
+    <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top">Server Side</h3>
+      <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
+      <a class="w3-bar-item w3-button" href="/mysql/default.asp">Learn MySQL</a>
+      <a class="w3-bar-item w3-button" href="/php/default.asp">Learn PHP</a>
+      <a class="w3-bar-item w3-button" href='/asp/default.asp'>Learn ASP</a>
+      <a class="w3-bar-item w3-button" href='/nodejs/default.asp'>Learn Node.js</a>
+      <a class="w3-bar-item w3-button" href='/nodejs/nodejs_raspberrypi.asp'>Learn Raspberry Pi</a>
+      <a class="w3-bar-item w3-button" href='/git/default.asp'>Learn Git</a>
+   
+      <h3 class="w3-margin-top">Web Building</h3>
+      <a class="w3-bar-item w3-button" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'spacesFromTutorialsAcc', 'click');" title="Get Your Own Website With W3shools Spaces">Create a Website <span class="ribbon-topnav ws-yellow">NEW</span></a>
+      <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp">Web Templates</a>
+      <a class="w3-bar-item w3-button" href="/browsers/default.asp">Web Statistics</a>
+      <a class="w3-bar-item w3-button" href="/cert/default.asp">Web Certificates</a>
+      <a class="w3-bar-item w3-button" href="/whatis/default.asp">Web Development</a>
+      <a class="w3-bar-item w3-button" href='/tryit/default.asp'>Code Editor</a>
+      <a class="w3-bar-item w3-button" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+      <a class="w3-bar-item w3-button" href="/codegame/index.html" target="_blank">Play a Code Game</a>
+      <a class="w3-bar-item w3-button" href="/cybersecurity/index.php">Cyber Security</a>
+      <a class="w3-bar-item w3-button" href="/accessibility/index.php">Accessibility</a>
+     </div>
+     <div class="w3-col l3 m6 w3-hide-medium">
+      <h3 class="w3-margin-top">Data Analytics</h3>
+      <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
+      <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+      <a class="w3-bar-item w3-button" href="/datascience/default.asp">Learn Data Science</a> 
+      <a class="w3-bar-item w3-button" href="/python/numpy/default.asp">Learn NumPy</a>    
+      <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>    
+      <a class="w3-bar-item w3-button" href="/python/scipy/index.php">Learn SciPy</a>    
+      <a class="w3-bar-item w3-button" href="/python/matplotlib_intro.asp">Learn Matplotlib</a>    
+      <a class="w3-bar-item w3-button" href="/statistics/index.php">Learn Statistics</a>
+      <a class="w3-bar-item w3-button" href="/excel/index.php">Learn Excel</a>
+      <a class="w3-bar-item w3-button" href="/googlesheets/index.php">Learn Google Sheets</a>
+   
+      <h3 class="w3-margin-top">XML Tutorials</h3>
+      <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a>
+      <a class="w3-bar-item w3-button" href='/xml/ajax_intro.asp'>Learn XML AJAX</a>
+      <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
+      <a class="w3-bar-item w3-button" href='/xml/xml_dtd_intro.asp'>Learn XML DTD</a>
+      <a class="w3-bar-item w3-button" href='/xml/schema_intro.asp'>Learn XML Schema</a>
+      <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a>
+      <a class="w3-bar-item w3-button" href='/xml/xpath_intro.asp'>Learn XPath</a>
+      <a class="w3-bar-item w3-button" href='/xml/xquery_intro.asp'>Learn XQuery</a>
+     </div>
+    </div>
+    </div>
+    <br class="hidesm">
+   </nav>
+   
+   <nav id="nav_references" class="w3-hide-small" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;">
+    <div class="w3-content" style="max-width:1100px;font-size:18px">
+    <span onclick="w3_close_nav('references')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white sectionxsclosenavspan" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+    <div class="w3-row-padding w3-bar-block">
+    <div class="w3-container" style="padding-left:13px">
+      <h2 style="color:#FFF4A3;"><b>قائمة الدورات على اليوتيوب</b></h2>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top">HTML</h3>
+      <a class="w3-bar-item w3-button" href='/tags/default.asp'>HTML Tag Reference</a>
+      <a class="w3-bar-item w3-button" href='/tags/ref_html_browsersupport.asp'>HTML Browser Support</a>   
+      <a class="w3-bar-item w3-button" href='/tags/ref_eventattributes.asp'>HTML Event Reference</a>
+      <a class="w3-bar-item w3-button" href='/colors/default.asp'>HTML Color Reference</a>
+      <a class="w3-bar-item w3-button" href='/tags/ref_attributes.asp'>HTML Attribute Reference</a>
+      <a class="w3-bar-item w3-button" href='/tags/ref_canvas.asp'>HTML Canvas Reference</a>
+      <a class="w3-bar-item w3-button" href='/graphics/svg_reference.asp'>HTML SVG Reference</a>
+      <a class="w3-bar-item w3-button" href='/graphics/google_maps_reference.asp'>Google Maps Reference</a>
+      <h3 class="w3-margin-top">CSS</h3>
+      <a class="w3-bar-item w3-button" href='/cssref/default.asp'>CSS Reference</a>
+      <a class="w3-bar-item w3-button" href='/cssref/css3_browsersupport.asp'>CSS Browser Support</a>
+      <a class="w3-bar-item w3-button" href='/cssref/css_selectors.asp'>CSS Selector Reference</a>
+      <a class="w3-bar-item w3-button" href='/bootstrap/bootstrap_ref_all_classes.asp'>Bootstrap 3 Reference</a>
+      <a class="w3-bar-item w3-button" href='/bootstrap4/bootstrap_ref_all_classes.asp'>Bootstrap 4 Reference</a>
+      <a class="w3-bar-item w3-button" href='/w3css/w3css_references.asp'>W3.CSS Reference</a>
+      <a class="w3-bar-item w3-button" href='/icons/icons_reference.asp'>Icon Reference</a>
+      <a class="w3-bar-item w3-button" href='/sass/sass_functions_string.php'>Sass Reference</a>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top">JavaScript</h3>
+      <a class="w3-bar-item w3-button" href='/jsref/default.asp'>JavaScript Reference</a>
+      <a class="w3-bar-item w3-button" href='/jsref/default.asp'>HTML DOM Reference</a>
+      <a class="w3-bar-item w3-button" href='/jquery/jquery_ref_overview.asp'>jQuery Reference</a>
+      <a class="w3-bar-item w3-button" href='/angular/angular_ref_directives.asp'>AngularJS Reference</a>
+      <a class="w3-bar-item w3-button" href="/appml/appml_reference.asp">AppML Reference</a>
+      <a class="w3-bar-item w3-button" href="/w3js/w3js_references.asp">W3.JS Reference</a>
+   
+      <h3 class="w3-margin-top">Programming</h3>
+      <a class="w3-bar-item w3-button" href='/python/python_reference.asp'>Python Reference</a>
+      <a class="w3-bar-item w3-button" href='/java/java_ref_keywords.asp'>Java Reference</a>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top">Server Side</h3>
+      <a class="w3-bar-item w3-button" href='/sql/sql_ref_keywords.asp'>SQL Reference</a>
+      <a class="w3-bar-item w3-button" href='/mysql/mysql_ref_functions.asp'>MySQL Reference</a>
+      <a class="w3-bar-item w3-button" href='/php/php_ref_overview.asp'>PHP Reference</a>
+      <a class="w3-bar-item w3-button" href='/asp/asp_ref_response.asp'>ASP Reference</a>
+      <h3 class="w3-margin-top">XML</h3>
+      <a class="w3-bar-item w3-button" href='/xml/dom_nodetype.asp'>XML DOM Reference</a>
+      <a class="w3-bar-item w3-button" href='/xml/dom_http.asp'>XML Http Reference</a>
+      <a class="w3-bar-item w3-button" href='/xml/xsl_elementref.asp'>XSLT Reference</a>
+      <a class="w3-bar-item w3-button" href='/xml/schema_elements_ref.asp'>XML Schema Reference</a>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top">Character Sets</h3>
+      <a class="w3-bar-item w3-button" href='/charsets/default.asp'>HTML Character Sets</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_ascii.asp'>HTML ASCII</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_ansi.asp'>HTML ANSI</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_ansi.asp'>HTML Windows-1252</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_8859.asp'>HTML ISO-8859-1</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_symbols.asp'>HTML Symbols</a>
+      <a class="w3-bar-item w3-button" href='/charsets/ref_html_utf8.asp'>HTML UTF-8</a>
+     </div>
+    </div>
+    <br class="hidesm">
+    </div>
+   </nav>
+   
+   <nav id="nav_exercises" class="w3-hide-small" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;">
+    <div class="w3-content" style="max-width:1100px;font-size:18px">
+    <span onclick="w3_close_nav('exercises')" class="w3-button w3-xxxlarge w3-display-topright w3-hover-white sectionxsclosenavspan" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+    <div class="w3-row-padding w3-bar-block">
+    <div class="w3-container" style="padding-left:13px">
+      <h2 style="color:#FFF4A3;"><b>مواضيع تهمك</b></h2>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:155px;font-size:21px" href="/exercises/index.php">Exercises</a></h3>
+      <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
+      <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a>
+      <a class="w3-bar-item w3-button" href="/js/js_exercises.asp">JavaScript Exercises</a>
+      <a class="w3-bar-item w3-button" href="/sql/sql_exercises.asp">SQL Exercises</a>
+      <a class="w3-bar-item w3-button" href="/mysql/mysql_exercises.asp">MySQL Exercises</a>
+      <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
+      <a class="w3-bar-item w3-button" href="/python/python_exercises.asp">Python Exercises</a>
+      <a class="w3-bar-item w3-button" href="/python/numpy/numpy_exercises.asp">NumPy Exercises</a>
+      <a class="w3-bar-item w3-button" href="/python/pandas/pandas_exercises.asp">Pandas Exercises</a>
+      <a class="w3-bar-item w3-button" href="/python/scipy/scipy_exercises.php">SciPy Exercises</a>
+      <a class="w3-bar-item w3-button" href="/jquery/jquery_exercises.asp">jQuery Exercises</a>
+      <a class="w3-bar-item w3-button" href="/java/java_exercises.asp">Java Exercises</a>
+      <a class="w3-bar-item w3-button" href="/cpp/cpp_exercises.asp">C++ Exercises</a>
+      <a class="w3-bar-item w3-button" href="/cs/cs_exercises.asp">C# Exercises</a>
+      <a class="w3-bar-item w3-button" href="/r/r_exercises.asp">R Exercises</a>
+      <a class="w3-bar-item w3-button" href="/kotlin/kotlin_exercises.php">Kotlin Exercises</a>
+      <a class="w3-bar-item w3-button" href="/go/go_exercises.php">Go Exercises</a>
+      <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp">Bootstrap Exercises</a>
+      <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_exercises.asp">Bootstrap 4 Exercises</a>
+      <a class="w3-bar-item w3-button" href="/bootstrap5/bootstrap_exercises.php">Bootstrap 5 Exercises</a>
+      <a class="w3-bar-item w3-button" href="/git/git_exercises.asp">Git Exercises</a>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:135px;font-size:21px" href="/quiztest/default.asp">Quizzes</a></h3>
+      <a class="w3-bar-item w3-button" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
+      <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+      <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+      <a class="w3-bar-item w3-button" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
+      <a class="w3-bar-item w3-button" href="/mysql/mysql_quiz.asp" target="_top">MySQL Quiz</a>
+      <a class="w3-bar-item w3-button" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+      <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+      <a class="w3-bar-item w3-button" href="/python/numpy/numpy_quiz.asp" target="_top">NumPy Quiz</a>
+      <a class="w3-bar-item w3-button" href="/python/pandas/pandas_quiz.asp" target="_top">Pandas Quiz</a>
+      <a class="w3-bar-item w3-button" href="/python/scipy/scipy_quiz.php" target="_top">SciPy Quiz</a>
+      <a class="w3-bar-item w3-button" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+      <a class="w3-bar-item w3-button" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+      <a class="w3-bar-item w3-button" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+      <a class="w3-bar-item w3-button" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+      <a class="w3-bar-item w3-button" href="/r/r_quiz.asp" target="_top">R Quiz</a>
+      <a class="w3-bar-item w3-button" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+      <a class="w3-bar-item w3-button" href="/cybersecurity/cybersecurity_quiz.php">Cyber Security Quiz</a>
+      <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
+      <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_quiz.asp" target="_top">Bootstrap 4 Quiz</a>
+      <a class="w3-bar-item w3-button" href="/bootstrap5/bootstrap_quiz.php" target="_top">Bootstrap 5 Quiz</a>
+      <a class="w3-bar-item w3-button" href="/accessibility/accessibility_quiz.php">Accessibility Quiz</a>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:135px;font-size:21px" href="https://courses.w3schools.com/" target="_blank">Courses</a></h3>
+   <!-- cert
+      <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_javascript.asp" target="_top">JavaScript Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_xml.asp" target="_top">XML Certificate</a>
+   -->  
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/html" target="_blank">HTML Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/css" target="_blank">CSS Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/javascript" target="_blank">JavaScript Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/front-end" target="_blank">Front End Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/sql" target="_blank">SQL Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/php" target="_blank">PHP Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/python" target="_blank">Python Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/numpy-fundamentals" target="_blank">NumPy Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/pandas-fundamentals" target="_blank">Pandas Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/programs/data-analytics" target="_blank">Data Analytics Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/jquery" target="_blank">jQuery Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/java" target="_blank">Java Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/cplusplus" target="_blank">C++ Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/c-sharp" target="_blank">C# Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/r-fundamentals" target="_blank">R Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/xml" target="_blank">XML Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/introduction-to-cyber-security" target="_blank">Cyber Security Course</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/courses/accessibility-fundamentals" target="_blank">Accessibility Course</a>
+     </div>
+     <div class="w3-col l3 m6">
+      <h3 class="w3-margin-top"><a class="ws-btn ws-yellow w3-hover-text-white" style="width:150px;font-size:21px" href="https://courses.w3schools.com/browse/certifications" target="_blank">Certificates</a></h3>
+   <!-- cert
+      <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_javascript.asp" target="_top">JavaScript Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a>
+      <a class="w3-bar-item w3-button" href="/cert/cert_xml.asp" target="_top">XML Certificate</a>
+   -->  
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/html-certification-exam" target="_blank">HTML Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/css-certification-exam" target="_blank">CSS Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/javascript-certification-exam" target="_blank">JavaScript Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/front-end-certification-exam" target="_blank">Front End Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/sql-certification-exam" target="_blank">SQL Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/php-certification-exam" target="_blank">PHP Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/python-certificaftion-exam" target="_blank">Python Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/data-science-certification-exam" target="_blank">Data Science Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/bootstrap-3-certification-exam" target="_blank">Bootstrap 3 Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/bootstrap-4-certification-exam" target="_blank">Bootstrap 4 Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/jquery-certification-exam" target="_blank">jQuery Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/java-certification-exam" target="_blank">Java Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/c-certification-exam" target="_blank">C++ Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/react-certification-exam" target="_blank">React Certificate</a>
+      <a class="w3-bar-item w3-button" href="https://courses.w3schools.com/browse/certifications/courses/xml-certification-exam" target="_blank">XML Certificate</a>
+     </div>
+    </div>
+    <br class="hidesm">
+    </div>
+   </nav>
+   
+   
+     </div>
+   </div>
+   
+   <div id='myAccordion' class="w3-card-2 w3-center w3-hide-large w3-hide-medium" style="width:100%;position:absolute;display:none;background-color:#E7E9EB">
+     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xxlarge w3-right">&times;</a><br>
+     <div class="w3-container w3-padding-32">
+       <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">القائمة الرئيسية للدورات </a>
+       <div id="sectionxs_tutorials" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+       <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('references')" href="javascript:void(0);">قائمة الدورات على اليوتيوب </a>
+       <div id="sectionxs_references" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+       <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('exercises')" href="javascript:void(0);">مواضيع تهمك </a>
+       <div id="sectionxs_exercises" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+       <a class="w3-button w3-block" style="font-size:22px;" href="/cert/default.asp" target="_blank">Paid Courses</a>
+       <a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'spacesFromTutorialsAcc', 'click');" title="Get Your Own Website With W3shools Spaces">Spaces</a>
+       <a class="w3-button w3-block" style="font-size:22px;" target="_blank"href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Videos' , 'fromTopnavMain')" title="Video Tutorials">Videos</a>
+       <a class="w3-button w3-block" style="font-size:22px;" href="https://shop.w3schools.com" target="_blank">Shop</a>
+     </div>
+   </div>
+   
+   <script>
+   
+   </script>
+   
+   
+   <div class='w3-sidebar w3-collapse' id='sidenav' style="padding-top: -10px;">
+     <div id='leftmenuinner'>
+       <div id='leftmenuinnerinner' style="background-color:#E7E9EB;padding-left: 300px;">
+   <!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+   <!-- <h2 class="left"><span class="left_h2">الأساسيات</span>  العامة</h2>
+   <a target="_top" href="#belowtopnav">تصميم المواقع</a>
+   <a target="_top" href="#A-1">تاريخ تصميم المواقع</a>
+   <a target="_top" href="تحت_الإنشاء.html">تعريفات عامة</a>
+   <a target="_top" href="تحت_الإنشاء.html">المبادئ الأساسية لإنشاء الموقع</a>
+   <a target="_top" href="تحت_الإنشاء.html">متطلبات مصمم المواقع</a>
+   <a target="_top" href="تحت_الإنشاء.html">الفرق بين الفرونت والباك إند</a>
+   <a target="_top" href="تحت_الإنشاء.html">أول درس تصميم مواقع</a>
+   <a target="_top" href="تحت_الإنشاء.html">ماهى خريطة تصميم الموقع</a>
+   <a target="_top" href="تحت_الإنشاء.html">تدريب على ماسبق</a>
+   
+   <h2 class="left"><span class="left_h2">أساسيات </span>  للمبتدئينHTML</h2>
+   <a target="_top" href="تحت_الإنشاء.html">العنوان</a>
+   <a target="_top" href="تحت_الإنشاء.html">الفقرات</a>
+     <a target="_top" href="تحت_الإنشاء.html">الأنماط</a>
+     <a target="_top" href="تحت_الإنشاء.html">عناصر التنسيق</a>
+     <a target="_top" href="تحت_الإنشاء.html">الألوان</a> -->
+
+
+     <!-- ============================ -->
+     <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none;"><div class="toctitle" lang="ar" dir="rtl"><h2 id="mw-toc-heading">محتويات</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+     <ul>
+     <li class="toclevel-1 tocsection-1"><a href="#.D8.A8.D9.86.D9.8A.D8.A9_.D9.84.D8.BA.D8.A9_PHP"><span class="tocnumber">1</span> <span class="toctext">بنية لغة PHP</span></a></li>
+     <li class="toclevel-1 tocsection-2">
+        <a href="#.D9.85.D8.AC.D8.A7.D9.84.D8.A7.D8.AA_.D8.A7.D8.B3.D8.AA.D8.AE.D8.AF.D8.A7.D9.85_PHP">
+           <span class="tocnumber">
+              2</span> 
+              <span class="toctext">مجالات استخدام PHP</span>
+            </a>
+         </li>
+     <li class="toclevel-1">
+        <a href="#.D8.A7.D9.84.D8.B6.D8.A8.D8.B7">
+           <span class="tocnumber">
+              3</span>
+               <span class="toctext">
+                  الضبط</span>
+               </a>
+            </li>
+     <li class="toclevel-1"><a href="#.D8.A8.D9.86.D9.8A.D8.A9_.D8.A7.D9.84.D9.84.D8.BA.D8.A9"><span class="tocnumber">4</span> <span class="toctext">بنية اللغة</span></a></li>
+     <li class="toclevel-1"><a href="#.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.D8.A7.D9.84.D8.A8.D9.8A.D8.A7.D9.86.D8.A7.D8.AA"><span class="tocnumber">5</span> <span class="toctext">أنواع البيانات</span></a>
+     <ul>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.82.D9.8A.D9.85_.D8.A7.D9.84.D9.85.D9.86.D8.B7.D9.82.D9.8A.D8.A9_.28boolean.29"><span class="tocnumber">5.1</span> <span class="toctext">القيم المنطقية (boolean)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.B5.D8.AD.D9.8A.D8.AD.D8.A9_.28integer.29"><span class="tocnumber">5.2</span> <span class="toctext">الأعداد الصحيحة (integer)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.B9.D8.B4.D8.B1.D9.8A.D8.A9_.28float.29"><span class="tocnumber">5.3</span> <span class="toctext">الأعداد العشرية (float)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B3.D9.84.D8.A7.D8.B3.D9.84_.D8.A7.D9.84.D9.86.D8.B5.D9.8A.D8.A9_.28string.29"><span class="tocnumber">5.4</span> <span class="toctext">السلاسل النصية (string)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.B5.D9.81.D9.88.D9.81.D8.A7.D8.AA_.28array.29"><span class="tocnumber">5.5</span> <span class="toctext">المصفوفات (array)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA_.28object.29"><span class="tocnumber">5.6</span> <span class="toctext">الكائنات (object)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B1.D8.AF.D9.88.D8.AF_.D8.A7.D9.84.D9.86.D8.AF.D8.A7.D8.A1_.28callables.29"><span class="tocnumber">5.7</span> <span class="toctext">ردود النداء (callables)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D8.AA.D9.83.D8.B1.D8.A7.D8.B1.D9.8A.D8.A9_.28iterables.29"><span class="tocnumber">5.8</span> <span class="toctext">المتغيرات التكرارية (iterables)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D9.88.D8.A7.D8.B1.D8.AF_.28resources.29"><span class="tocnumber">5.9</span> <span class="toctext">الموارد (resources)</span></a></li>
+     <li class="toclevel-2"><a href="#NULL"><span class="tocnumber">5.10</span> <span class="toctext">NULL</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A3.D8.B4.D8.A8.D8.A7.D9.87_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28pseudo-types.29"><span class="tocnumber">5.11</span> <span class="toctext">أشباه الأنواع (pseudo-types)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D8.B9.D8.A7.D9.85.D9.84_.D9.85.D8.B9_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28Type_Juggling.29"><span class="tocnumber">5.12</span> <span class="toctext">التعامل مع الأنواع (Type Juggling)</span></a></li>
+     </ul>
+     </li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA"><span class="tocnumber">6</span> <span class="toctext">المتغيرات</span></a>
+     <ul>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D9.85.D8.B9.D8.B1.D9.81.D8.A9_.D9.85.D8.B3.D8.A8.D9.82.D9.8B.D8.A7"><span class="tocnumber">6.1</span> <span class="toctext">المتغيرات المعرفة مسبقًا</span></a></li>
+     <li class="toclevel-2"><a href="#.D9.86.D8.B7.D8.A7.D9.82_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA"><span class="tocnumber">6.2</span> <span class="toctext">نطاق المتغيرات</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A9"><span class="tocnumber">6.3</span> <span class="toctext">المتغيرات المتغيرة</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D9.85.D9.86_.D9.85.D8.B5.D8.A7.D8.AF.D8.B1_.D8.AE.D8.A7.D8.B1.D8.AC.D9.8A.D8.A9"><span class="tocnumber">6.4</span> <span class="toctext">المتغيرات من مصادر خارجية</span></a></li>
+     </ul>
+     </li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.AB.D9.88.D8.A7.D8.A8.D8.AA"><span class="tocnumber">7</span> <span class="toctext">الثوابت</span></a></li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.AA.D8.B9.D8.A7.D8.A8.D9.8A.D8.B1_.28Expressions.29"><span class="tocnumber">8</span> <span class="toctext">التعابير (Expressions)</span></a></li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D9.81.D9.8A_PHP"><span class="tocnumber">9</span> <span class="toctext">العوامل في PHP</span></a>
+     <ul>
+     <li class="toclevel-2"><a href="#.D8.A3.D9.88.D9.84.D9.88.D9.8A.D8.A9_.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.28Operator_Precedence.29"><span class="tocnumber">9.1</span> <span class="toctext">أولوية العوامل (Operator Precedence)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AD.D8.B3.D8.A7.D8.A8.D9.8A.D8.A9_.28Arithmetic_Operators.29"><span class="tocnumber">9.2</span> <span class="toctext">العوامل الحسابية (Arithmetic Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A5.D8.B3.D9.86.D8.A7.D8.AF_.28Assignment_Operators.29"><span class="tocnumber">9.3</span> <span class="toctext">عوامل الإسناد (Assignment Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.AB.D9.86.D8.A7.D8.A6.D9.8A.D8.A9_.28Bitwise_Operators.29"><span class="tocnumber">9.4</span> <span class="toctext">عوامل الأعداد الثنائية (Bitwise Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D9.82.D8.A7.D8.B1.D9.86.D8.A9_.28Comparison_Operators.29"><span class="tocnumber">9.5</span> <span class="toctext">عوامل المقارنة (Comparison Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AA.D8.AD.D9.83.D9.85_.D8.A8.D8.A7.D9.84.D8.A3.D8.AE.D8.B7.D8.A7.D8.A1_.28Error_Control_Operators.29"><span class="tocnumber">9.6</span> <span class="toctext">عوامل التحكم بالأخطاء (Error Control Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AA.D9.86.D9.81.D9.8A.D8.B0_.28Execution_Operators.29"><span class="tocnumber">9.7</span> <span class="toctext">عوامل التنفيذ (Execution Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.B2.D9.8A.D8.A7.D8.AF.D8.A9_.D9.88.D8.A7.D9.84.D9.86.D9.82.D8.B5.D8.A7.D9.86_.28Incrementing.2FDecrementing_Operators.29"><span class="tocnumber">9.8</span> <span class="toctext">عوامل الزيادة والنقصان (Incrementing/Decrementing Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D9.86.D8.B7.D9.82.D9.8A.D8.A9_.28Logical_Operators.29"><span class="tocnumber">9.9</span> <span class="toctext">العوامل المنطقية (Logical Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.B3.D9.84.D8.A7.D8.B3.D9.84_.D8.A7.D9.84.D9.86.D8.B5.D9.8A.D8.A9_.28String_Operators.29"><span class="tocnumber">9.10</span> <span class="toctext">عوامل السلاسل النصية (String Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D8.B5.D9.81.D9.88.D9.81.D8.A7.D8.AA_.28Array_Operators.29"><span class="tocnumber">9.11</span> <span class="toctext">عوامل المصفوفات (Array Operators)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28Type_Operators.29"><span class="tocnumber">9.12</span> <span class="toctext">عوامل الأنواع (Type Operators)</span></a></li>
+     </ul>
+     </li>
+     <li class="toclevel-1"><a href="#.D8.A8.D9.86.D9.89_.D8.A7.D9.84.D8.AA.D8.AD.D9.83.D9.85"><span class="tocnumber">10</span> <span class="toctext">بنى التحكم</span></a>
+     <ul>
+     <li class="toclevel-2"><a href="#if"><span class="tocnumber">10.1</span> <span class="toctext">if</span></a></li>
+     <li class="toclevel-2"><a href="#else"><span class="tocnumber">10.2</span> <span class="toctext">else</span></a></li>
+     <li class="toclevel-2"><a href="#elseif.2Felse_if"><span class="tocnumber">10.3</span> <span class="toctext">elseif/else if</span></a></li>
+     <li class="toclevel-2"><a href="#while"><span class="tocnumber">10.4</span> <span class="toctext">while</span></a></li>
+     <li class="toclevel-2"><a href="#do-while"><span class="tocnumber">10.5</span> <span class="toctext">do-while</span></a></li>
+     <li class="toclevel-2"><a href="#for"><span class="tocnumber">10.6</span> <span class="toctext">for</span></a></li>
+     <li class="toclevel-2"><a href="#foreach"><span class="tocnumber">10.7</span> <span class="toctext">foreach</span></a></li>
+     <li class="toclevel-2"><a href="#break"><span class="tocnumber">10.8</span> <span class="toctext">break</span></a></li>
+     <li class="toclevel-2"><a href="#continue"><span class="tocnumber">10.9</span> <span class="toctext">continue</span></a></li>
+     <li class="toclevel-2"><a href="#switch"><span class="tocnumber">10.10</span> <span class="toctext">switch</span></a></li>
+     <li class="toclevel-2"><a href="#declare"><span class="tocnumber">10.11</span> <span class="toctext">declare</span></a></li>
+     <li class="toclevel-2"><a href="#return"><span class="tocnumber">10.12</span> <span class="toctext">return</span></a></li>
+     <li class="toclevel-2"><a href="#require"><span class="tocnumber">10.13</span> <span class="toctext">require</span></a></li>
+     <li class="toclevel-2"><a href="#include"><span class="tocnumber">10.14</span> <span class="toctext">include</span></a></li>
+     <li class="toclevel-2"><a href="#require_once"><span class="tocnumber">10.15</span> <span class="toctext">require_once</span></a></li>
+     <li class="toclevel-2"><a href="#include_once"><span class="tocnumber">10.16</span> <span class="toctext">include_once</span></a></li>
+     <li class="toclevel-2"><a href="#goto"><span class="tocnumber">10.17</span> <span class="toctext">goto</span></a></li>
+     </ul>
+     </li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84"><span class="tocnumber">11</span> <span class="toctext">الدوال</span></a>
+     <ul>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.B9.D8.B1.D9.91.D9.81.D8.A9_.D9.85.D9.86_.D8.B7.D8.B1.D9.81_.D8.A7.D9.84.D9.85.D8.B3.D8.AA.D8.AE.D8.AF.D9.85"><span class="tocnumber">11.1</span> <span class="toctext">الدوال المعرّفة من طرف المستخدم</span></a></li>
+     <li class="toclevel-2"><a href="#.D9.85.D8.B9.D8.A7.D9.85.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84"><span class="tocnumber">11.2</span> <span class="toctext">معاملات الدوال</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A5.D8.B9.D8.A7.D8.AF.D8.A9_.D8.A7.D9.84.D9.82.D9.8A.D9.85"><span class="tocnumber">11.3</span> <span class="toctext">إعادة القيم</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D9.91.D8.B1.D8.A9"><span class="tocnumber">11.4</span> <span class="toctext">الدوال المتغيّرة</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D8.AF.D8.A7.D8.AE.D9.84.D9.8A.D8.A9_.28.D8.A7.D9.84.D9.85.D8.B6.D9.85.D9.91.D9.86.D8.A9.29"><span class="tocnumber">11.5</span> <span class="toctext">الدوال الداخلية (المضمّنة)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.AC.D9.87.D9.88.D9.84.D8.A9"><span class="tocnumber">11.6</span> <span class="toctext">الدوال المجهولة</span></a></li>
+     </ul>
+     </li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.A8.D8.B1.D9.85.D8.AC.D8.A9_.D9.83.D8.A7.D8.A6.D9.86.D9.8A.D8.A9_.D8.A7.D9.84.D8.AA.D9.88.D8.AC.D9.87"><span class="tocnumber">12</span> <span class="toctext">البرمجة كائنية التوجه</span></a>
+     <ul>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AE.D8.A7.D8.B5.D9.8A.D8.A7.D8.AA"><span class="tocnumber">12.1</span> <span class="toctext">الخاصيات</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.AB.D9.88.D8.A7.D8.A8.D8.AA_.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><span class="tocnumber">12.2</span> <span class="toctext">ثوابت الأصناف</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D8.AD.D9.85.D9.8A.D9.84_.D8.A7.D9.84.D8.AA.D9.84.D9.82.D8.A7.D8.A6.D9.8A_.D9.84.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><span class="tocnumber">12.3</span> <span class="toctext">التحميل التلقائي للأصناف</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D9.88.D8.A7.D8.A8.D8.B9_.D8.A7.D9.84.D8.A8.D8.A7.D9.86.D9.8A.D8.A9_.D9.88.D8.A7.D9.84.D9.87.D8.A7.D8.AF.D9.85.D8.A9"><span class="tocnumber">12.4</span> <span class="toctext">التوابع البانية والهادمة</span></a></li>
+     <li class="toclevel-2"><a href="#.D9.82.D8.A7.D8.A8.D9.84.D9.8A.D8.A9_.D8.A7.D9.84.D8.B1.D8.A4.D9.8A.D8.A9"><span class="tocnumber">12.5</span> <span class="toctext">قابلية الرؤية</span></a></li>
+     <li class="toclevel-2"><a href="#.D9.88.D8.B1.D8.A7.D8.AB.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.6</span> <span class="toctext">وراثة الكائنات</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B9.D8.A7.D9.85.D9.84_.D8.AA.D8.AD.D9.84.D9.8A.D9.84_.D8.A7.D9.84.D9.86.D8.B7.D8.A7.D9.82_.28::.29"><span class="tocnumber">12.7</span> <span class="toctext">عامل تحليل النطاق (::)</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D9.84.D9.85.D8.A9_.D8.A7.D9.84.D9.85.D9.81.D8.AA.D8.A7.D8.AD.D9.8A.D8.A9_Static"><span class="tocnumber">12.8</span> <span class="toctext">الكلمة المفتاحية Static</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.AA.D8.AC.D8.B1.D9.8A.D8.AF_.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><span class="tocnumber">12.9</span> <span class="toctext">تجريد الأصناف</span></a></li>
+     <li class="toclevel-2"><a href="#.D9.88.D8.A7.D8.AC.D9.87.D8.A7.D8.AA_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.10</span> <span class="toctext">واجهات الكائنات</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B3.D9.85.D8.A7.D8.AA"><span class="tocnumber">12.11</span> <span class="toctext">السمات</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81_.D8.A7.D9.84.D9.85.D8.AC.D9.87.D9.88.D9.84.D8.A9"><span class="tocnumber">12.12</span> <span class="toctext">الأصناف المجهولة</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D8.AD.D9.85.D9.8A.D9.84_.D8.A7.D9.84.D8.B2.D8.A7.D8.A6.D8.AF"><span class="tocnumber">12.13</span> <span class="toctext">التحميل الزائد</span></a></li>
+     <li class="toclevel-2"><a href="#Object_Iteration"><span class="tocnumber">12.14</span> <span class="toctext">Object Iteration</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D9.88.D8.A7.D8.A8.D8.B9_.D8.A7.D9.84.D8.B3.D8.AD.D8.B1.D9.8A.D8.A9"><span class="tocnumber">12.15</span> <span class="toctext">التوابع السحرية</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D9.84.D9.85.D8.A9_.D8.A7.D9.84.D9.85.D9.81.D8.AA.D8.A7.D8.AD.D9.8A.D8.A9_final"><span class="tocnumber">12.16</span> <span class="toctext">الكلمة المفتاحية final</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D8.B3.D8.AA.D9.86.D8.B3.D8.A7.D8.AE_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.17</span> <span class="toctext">استنساخ الكائنات</span></a></li>
+     <li class="toclevel-2"><a href="#.D9.85.D9.82.D8.A7.D8.B1.D9.86.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.18</span> <span class="toctext">مقارنة الكائنات</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D9.84.D9.85.D9.8A.D8.AD_.D8.B9.D9.86_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9"><span class="tocnumber">12.19</span> <span class="toctext">التلميح عن الأنواع</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B1.D9.88.D8.A7.D8.A8.D8.B7_.D8.A7.D9.84.D8.B3.D8.A7.D9.83.D9.86.D8.A9_.D8.A7.D9.84.D9.85.D8.AA.D8.A3.D8.AE.D8.B1.D8.A9"><span class="tocnumber">12.20</span> <span class="toctext">الروابط الساكنة المتأخرة</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA_.D9.88.D8.A7.D9.84.D9.85.D8.B1.D8.A7.D8.AC.D8.B9"><span class="tocnumber">12.21</span> <span class="toctext">الكائنات والمراجع</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B3.D9.8E.D9.84.D8.B3.D9.8E.D9.84.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86"><span class="tocnumber">12.22</span> <span class="toctext">‎سَلسَلة الكائن</span></a></li>
+     <li class="toclevel-2"><a href="#.D8.B3.D8.AC.D9.84_.D8.A7.D9.84.D8.AA.D8.BA.D9.8A.D9.8A.D8.B1.D8.A7.D8.AA"><span class="tocnumber">12.23</span> <span class="toctext">سجل التغييرات</span></a></li>
+     </ul>
+     </li>
+     <li class="toclevel-1"><a href="#.D9.85.D8.AC.D8.A7.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.A3.D8.B3.D9.85.D8.A7.D8.A1"><span class="tocnumber">13</span> <span class="toctext">مجالات الأسماء</span></a></li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.A3.D8.AE.D8.B7.D8.A7.D8.A1"><span class="tocnumber">14</span> <span class="toctext">الأخطاء</span></a></li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.A7.D8.B3.D8.AA.D8.AB.D9.86.D8.A7.D8.A1.D8.A7.D8.AA"><span class="tocnumber">15</span> <span class="toctext">الاستثناءات</span></a></li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D9.85.D9.88.D9.84.D8.AF.D8.A7.D8.AA"><span class="tocnumber">16</span> <span class="toctext">المولدات</span></a></li>
+     <li class="toclevel-1"><a href="#.D8.A7.D9.84.D9.85.D8.B1.D8.A7.D8.AC.D8.B9"><span class="tocnumber">17</span> <span class="toctext">المراجع</span></a></li>
+     <li class="toclevel-1 tocsection-3"><a href="#.D9.85.D8.B5.D8.A7.D8.AF.D8.B1"><span class="tocnumber">18</span> <span class="toctext">مصادر</span></a></li>
+     </ul>
+     </div>
+     
+       </div>
+     </div>
+   </div>
+   <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+     <div id="HTML" class='w3-row w3-white'>
+       <div class='w3-col l10 m12' id='main'>
+       </div>
+     </div>
+   </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= -->
+<div id="content" class="mw-body hsoub-content" role="main" style="margin-right: 300px;">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+
+
+
+
+   <a class=" w3-button bar-item-hover  ws-hide-900 w3-hide-small barex ws-pink " style="border-radius: 25px; margin-right: 15px;"  target="_blank" onclick="ga('send', 'event', 'spacesFromTopnavMain', 'click');" title="جديد">	<h1 id="firstHeading" class="firstHeading" lang="ar">PHP</h1><span class="ribbon-topnav ws-hide-1066">جديد</span></a>
+
+
+
+
+
+
+
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">من موسوعة حسوب</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">اذهب إلى التنقل</a>
+		<a class="mw-jump-link" href="#searchInput">اذهب إلى البحث</a>
+		<div id="mw-content-text" lang="ar" dir="rtl" class="mw-content-rtl"><div class="mw-parser-output"><p>لغة PHP (والتي هي اختصارٌ تعاودي للعبارة PHP: Hypertext Preprocessor) هي لغةٌ مفتوحة المصدر شائعة الاستخدام لها مجال استخدامٍ عامٍ لكنها تناسب تطوير الويب ودمج لغة <a href="/HTML" title="HTML">HTML</a> معها.
+</p><p>الذي يُميّز PHP عن الشيفرات التي تعمل في جهة العميل مثل JavaScript هو أنَّ شيفرات PHP ستُنفَّذ على الخادم، مما يولِّد شيفرة HTML التي ستُرسَل بعد ذلك إلى العميل. أي أنَّ العميل سيستلم ناتج تنفيذ شيفرة PHP ولن يعلم ما هي الشيفرة الأصلية التي ولَّدتها.
+</p>
+<!-- <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="ar" dir="rtl"><h2 id="mw-toc-heading">محتويات</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D8.A8.D9.86.D9.8A.D8.A9_.D9.84.D8.BA.D8.A9_PHP"><span class="tocnumber">1</span> <span class="toctext">بنية لغة PHP</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D9.85.D8.AC.D8.A7.D9.84.D8.A7.D8.AA_.D8.A7.D8.B3.D8.AA.D8.AE.D8.AF.D8.A7.D9.85_PHP"><span class="tocnumber">2</span> <span class="toctext">مجالات استخدام PHP</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.B6.D8.A8.D8.B7"><span class="tocnumber">3</span> <span class="toctext">الضبط</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A8.D9.86.D9.8A.D8.A9_.D8.A7.D9.84.D9.84.D8.BA.D8.A9"><span class="tocnumber">4</span> <span class="toctext">بنية اللغة</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.D8.A7.D9.84.D8.A8.D9.8A.D8.A7.D9.86.D8.A7.D8.AA"><span class="tocnumber">5</span> <span class="toctext">أنواع البيانات</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.82.D9.8A.D9.85_.D8.A7.D9.84.D9.85.D9.86.D8.B7.D9.82.D9.8A.D8.A9_.28boolean.29"><span class="tocnumber">5.1</span> <span class="toctext">القيم المنطقية (boolean)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.B5.D8.AD.D9.8A.D8.AD.D8.A9_.28integer.29"><span class="tocnumber">5.2</span> <span class="toctext">الأعداد الصحيحة (integer)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.B9.D8.B4.D8.B1.D9.8A.D8.A9_.28float.29"><span class="tocnumber">5.3</span> <span class="toctext">الأعداد العشرية (float)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B3.D9.84.D8.A7.D8.B3.D9.84_.D8.A7.D9.84.D9.86.D8.B5.D9.8A.D8.A9_.28string.29"><span class="tocnumber">5.4</span> <span class="toctext">السلاسل النصية (string)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.B5.D9.81.D9.88.D9.81.D8.A7.D8.AA_.28array.29"><span class="tocnumber">5.5</span> <span class="toctext">المصفوفات (array)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA_.28object.29"><span class="tocnumber">5.6</span> <span class="toctext">الكائنات (object)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B1.D8.AF.D9.88.D8.AF_.D8.A7.D9.84.D9.86.D8.AF.D8.A7.D8.A1_.28callables.29"><span class="tocnumber">5.7</span> <span class="toctext">ردود النداء (callables)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D8.AA.D9.83.D8.B1.D8.A7.D8.B1.D9.8A.D8.A9_.28iterables.29"><span class="tocnumber">5.8</span> <span class="toctext">المتغيرات التكرارية (iterables)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D9.88.D8.A7.D8.B1.D8.AF_.28resources.29"><span class="tocnumber">5.9</span> <span class="toctext">الموارد (resources)</span></a></li>
+<li class="toclevel-2"><a href="#NULL"><span class="tocnumber">5.10</span> <span class="toctext">NULL</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A3.D8.B4.D8.A8.D8.A7.D9.87_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28pseudo-types.29"><span class="tocnumber">5.11</span> <span class="toctext">أشباه الأنواع (pseudo-types)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D8.B9.D8.A7.D9.85.D9.84_.D9.85.D8.B9_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28Type_Juggling.29"><span class="tocnumber">5.12</span> <span class="toctext">التعامل مع الأنواع (Type Juggling)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA"><span class="tocnumber">6</span> <span class="toctext">المتغيرات</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D9.85.D8.B9.D8.B1.D9.81.D8.A9_.D9.85.D8.B3.D8.A8.D9.82.D9.8B.D8.A7"><span class="tocnumber">6.1</span> <span class="toctext">المتغيرات المعرفة مسبقًا</span></a></li>
+<li class="toclevel-2"><a href="#.D9.86.D8.B7.D8.A7.D9.82_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA"><span class="tocnumber">6.2</span> <span class="toctext">نطاق المتغيرات</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A9"><span class="tocnumber">6.3</span> <span class="toctext">المتغيرات المتغيرة</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D9.85.D9.86_.D9.85.D8.B5.D8.A7.D8.AF.D8.B1_.D8.AE.D8.A7.D8.B1.D8.AC.D9.8A.D8.A9"><span class="tocnumber">6.4</span> <span class="toctext">المتغيرات من مصادر خارجية</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.AB.D9.88.D8.A7.D8.A8.D8.AA"><span class="tocnumber">7</span> <span class="toctext">الثوابت</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.AA.D8.B9.D8.A7.D8.A8.D9.8A.D8.B1_.28Expressions.29"><span class="tocnumber">8</span> <span class="toctext">التعابير (Expressions)</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D9.81.D9.8A_PHP"><span class="tocnumber">9</span> <span class="toctext">العوامل في PHP</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.D8.A3.D9.88.D9.84.D9.88.D9.8A.D8.A9_.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.28Operator_Precedence.29"><span class="tocnumber">9.1</span> <span class="toctext">أولوية العوامل (Operator Precedence)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AD.D8.B3.D8.A7.D8.A8.D9.8A.D8.A9_.28Arithmetic_Operators.29"><span class="tocnumber">9.2</span> <span class="toctext">العوامل الحسابية (Arithmetic Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A5.D8.B3.D9.86.D8.A7.D8.AF_.28Assignment_Operators.29"><span class="tocnumber">9.3</span> <span class="toctext">عوامل الإسناد (Assignment Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.AB.D9.86.D8.A7.D8.A6.D9.8A.D8.A9_.28Bitwise_Operators.29"><span class="tocnumber">9.4</span> <span class="toctext">عوامل الأعداد الثنائية (Bitwise Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D9.82.D8.A7.D8.B1.D9.86.D8.A9_.28Comparison_Operators.29"><span class="tocnumber">9.5</span> <span class="toctext">عوامل المقارنة (Comparison Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AA.D8.AD.D9.83.D9.85_.D8.A8.D8.A7.D9.84.D8.A3.D8.AE.D8.B7.D8.A7.D8.A1_.28Error_Control_Operators.29"><span class="tocnumber">9.6</span> <span class="toctext">عوامل التحكم بالأخطاء (Error Control Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AA.D9.86.D9.81.D9.8A.D8.B0_.28Execution_Operators.29"><span class="tocnumber">9.7</span> <span class="toctext">عوامل التنفيذ (Execution Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.B2.D9.8A.D8.A7.D8.AF.D8.A9_.D9.88.D8.A7.D9.84.D9.86.D9.82.D8.B5.D8.A7.D9.86_.28Incrementing.2FDecrementing_Operators.29"><span class="tocnumber">9.8</span> <span class="toctext">عوامل الزيادة والنقصان (Incrementing/Decrementing Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D9.86.D8.B7.D9.82.D9.8A.D8.A9_.28Logical_Operators.29"><span class="tocnumber">9.9</span> <span class="toctext">العوامل المنطقية (Logical Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.B3.D9.84.D8.A7.D8.B3.D9.84_.D8.A7.D9.84.D9.86.D8.B5.D9.8A.D8.A9_.28String_Operators.29"><span class="tocnumber">9.10</span> <span class="toctext">عوامل السلاسل النصية (String Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D8.B5.D9.81.D9.88.D9.81.D8.A7.D8.AA_.28Array_Operators.29"><span class="tocnumber">9.11</span> <span class="toctext">عوامل المصفوفات (Array Operators)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28Type_Operators.29"><span class="tocnumber">9.12</span> <span class="toctext">عوامل الأنواع (Type Operators)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#.D8.A8.D9.86.D9.89_.D8.A7.D9.84.D8.AA.D8.AD.D9.83.D9.85"><span class="tocnumber">10</span> <span class="toctext">بنى التحكم</span></a>
+<ul>
+<li class="toclevel-2"><a href="#if"><span class="tocnumber">10.1</span> <span class="toctext">if</span></a></li>
+<li class="toclevel-2"><a href="#else"><span class="tocnumber">10.2</span> <span class="toctext">else</span></a></li>
+<li class="toclevel-2"><a href="#elseif.2Felse_if"><span class="tocnumber">10.3</span> <span class="toctext">elseif/else if</span></a></li>
+<li class="toclevel-2"><a href="#while"><span class="tocnumber">10.4</span> <span class="toctext">while</span></a></li>
+<li class="toclevel-2"><a href="#do-while"><span class="tocnumber">10.5</span> <span class="toctext">do-while</span></a></li>
+<li class="toclevel-2"><a href="#for"><span class="tocnumber">10.6</span> <span class="toctext">for</span></a></li>
+<li class="toclevel-2"><a href="#foreach"><span class="tocnumber">10.7</span> <span class="toctext">foreach</span></a></li>
+<li class="toclevel-2"><a href="#break"><span class="tocnumber">10.8</span> <span class="toctext">break</span></a></li>
+<li class="toclevel-2"><a href="#continue"><span class="tocnumber">10.9</span> <span class="toctext">continue</span></a></li>
+<li class="toclevel-2"><a href="#switch"><span class="tocnumber">10.10</span> <span class="toctext">switch</span></a></li>
+<li class="toclevel-2"><a href="#declare"><span class="tocnumber">10.11</span> <span class="toctext">declare</span></a></li>
+<li class="toclevel-2"><a href="#return"><span class="tocnumber">10.12</span> <span class="toctext">return</span></a></li>
+<li class="toclevel-2"><a href="#require"><span class="tocnumber">10.13</span> <span class="toctext">require</span></a></li>
+<li class="toclevel-2"><a href="#include"><span class="tocnumber">10.14</span> <span class="toctext">include</span></a></li>
+<li class="toclevel-2"><a href="#require_once"><span class="tocnumber">10.15</span> <span class="toctext">require_once</span></a></li>
+<li class="toclevel-2"><a href="#include_once"><span class="tocnumber">10.16</span> <span class="toctext">include_once</span></a></li>
+<li class="toclevel-2"><a href="#goto"><span class="tocnumber">10.17</span> <span class="toctext">goto</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84"><span class="tocnumber">11</span> <span class="toctext">الدوال</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.B9.D8.B1.D9.91.D9.81.D8.A9_.D9.85.D9.86_.D8.B7.D8.B1.D9.81_.D8.A7.D9.84.D9.85.D8.B3.D8.AA.D8.AE.D8.AF.D9.85"><span class="tocnumber">11.1</span> <span class="toctext">الدوال المعرّفة من طرف المستخدم</span></a></li>
+<li class="toclevel-2"><a href="#.D9.85.D8.B9.D8.A7.D9.85.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84"><span class="tocnumber">11.2</span> <span class="toctext">معاملات الدوال</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A5.D8.B9.D8.A7.D8.AF.D8.A9_.D8.A7.D9.84.D9.82.D9.8A.D9.85"><span class="tocnumber">11.3</span> <span class="toctext">إعادة القيم</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D9.91.D8.B1.D8.A9"><span class="tocnumber">11.4</span> <span class="toctext">الدوال المتغيّرة</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D8.AF.D8.A7.D8.AE.D9.84.D9.8A.D8.A9_.28.D8.A7.D9.84.D9.85.D8.B6.D9.85.D9.91.D9.86.D8.A9.29"><span class="tocnumber">11.5</span> <span class="toctext">الدوال الداخلية (المضمّنة)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.AC.D9.87.D9.88.D9.84.D8.A9"><span class="tocnumber">11.6</span> <span class="toctext">الدوال المجهولة</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.A8.D8.B1.D9.85.D8.AC.D8.A9_.D9.83.D8.A7.D8.A6.D9.86.D9.8A.D8.A9_.D8.A7.D9.84.D8.AA.D9.88.D8.AC.D9.87"><span class="tocnumber">12</span> <span class="toctext">البرمجة كائنية التوجه</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AE.D8.A7.D8.B5.D9.8A.D8.A7.D8.AA"><span class="tocnumber">12.1</span> <span class="toctext">الخاصيات</span></a></li>
+<li class="toclevel-2"><a href="#.D8.AB.D9.88.D8.A7.D8.A8.D8.AA_.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><span class="tocnumber">12.2</span> <span class="toctext">ثوابت الأصناف</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D8.AD.D9.85.D9.8A.D9.84_.D8.A7.D9.84.D8.AA.D9.84.D9.82.D8.A7.D8.A6.D9.8A_.D9.84.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><span class="tocnumber">12.3</span> <span class="toctext">التحميل التلقائي للأصناف</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D9.88.D8.A7.D8.A8.D8.B9_.D8.A7.D9.84.D8.A8.D8.A7.D9.86.D9.8A.D8.A9_.D9.88.D8.A7.D9.84.D9.87.D8.A7.D8.AF.D9.85.D8.A9"><span class="tocnumber">12.4</span> <span class="toctext">التوابع البانية والهادمة</span></a></li>
+<li class="toclevel-2"><a href="#.D9.82.D8.A7.D8.A8.D9.84.D9.8A.D8.A9_.D8.A7.D9.84.D8.B1.D8.A4.D9.8A.D8.A9"><span class="tocnumber">12.5</span> <span class="toctext">قابلية الرؤية</span></a></li>
+<li class="toclevel-2"><a href="#.D9.88.D8.B1.D8.A7.D8.AB.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.6</span> <span class="toctext">وراثة الكائنات</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B9.D8.A7.D9.85.D9.84_.D8.AA.D8.AD.D9.84.D9.8A.D9.84_.D8.A7.D9.84.D9.86.D8.B7.D8.A7.D9.82_.28::.29"><span class="tocnumber">12.7</span> <span class="toctext">عامل تحليل النطاق (::)</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D9.84.D9.85.D8.A9_.D8.A7.D9.84.D9.85.D9.81.D8.AA.D8.A7.D8.AD.D9.8A.D8.A9_Static"><span class="tocnumber">12.8</span> <span class="toctext">الكلمة المفتاحية Static</span></a></li>
+<li class="toclevel-2"><a href="#.D8.AA.D8.AC.D8.B1.D9.8A.D8.AF_.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><span class="tocnumber">12.9</span> <span class="toctext">تجريد الأصناف</span></a></li>
+<li class="toclevel-2"><a href="#.D9.88.D8.A7.D8.AC.D9.87.D8.A7.D8.AA_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.10</span> <span class="toctext">واجهات الكائنات</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B3.D9.85.D8.A7.D8.AA"><span class="tocnumber">12.11</span> <span class="toctext">السمات</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81_.D8.A7.D9.84.D9.85.D8.AC.D9.87.D9.88.D9.84.D8.A9"><span class="tocnumber">12.12</span> <span class="toctext">الأصناف المجهولة</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D8.AD.D9.85.D9.8A.D9.84_.D8.A7.D9.84.D8.B2.D8.A7.D8.A6.D8.AF"><span class="tocnumber">12.13</span> <span class="toctext">التحميل الزائد</span></a></li>
+<li class="toclevel-2"><a href="#Object_Iteration"><span class="tocnumber">12.14</span> <span class="toctext">Object Iteration</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D9.88.D8.A7.D8.A8.D8.B9_.D8.A7.D9.84.D8.B3.D8.AD.D8.B1.D9.8A.D8.A9"><span class="tocnumber">12.15</span> <span class="toctext">التوابع السحرية</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D9.84.D9.85.D8.A9_.D8.A7.D9.84.D9.85.D9.81.D8.AA.D8.A7.D8.AD.D9.8A.D8.A9_final"><span class="tocnumber">12.16</span> <span class="toctext">الكلمة المفتاحية final</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D8.B3.D8.AA.D9.86.D8.B3.D8.A7.D8.AE_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.17</span> <span class="toctext">استنساخ الكائنات</span></a></li>
+<li class="toclevel-2"><a href="#.D9.85.D9.82.D8.A7.D8.B1.D9.86.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><span class="tocnumber">12.18</span> <span class="toctext">مقارنة الكائنات</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.AA.D9.84.D9.85.D9.8A.D8.AD_.D8.B9.D9.86_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9"><span class="tocnumber">12.19</span> <span class="toctext">التلميح عن الأنواع</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D8.B1.D9.88.D8.A7.D8.A8.D8.B7_.D8.A7.D9.84.D8.B3.D8.A7.D9.83.D9.86.D8.A9_.D8.A7.D9.84.D9.85.D8.AA.D8.A3.D8.AE.D8.B1.D8.A9"><span class="tocnumber">12.20</span> <span class="toctext">الروابط الساكنة المتأخرة</span></a></li>
+<li class="toclevel-2"><a href="#.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA_.D9.88.D8.A7.D9.84.D9.85.D8.B1.D8.A7.D8.AC.D8.B9"><span class="tocnumber">12.21</span> <span class="toctext">الكائنات والمراجع</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B3.D9.8E.D9.84.D8.B3.D9.8E.D9.84.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86"><span class="tocnumber">12.22</span> <span class="toctext">‎سَلسَلة الكائن</span></a></li>
+<li class="toclevel-2"><a href="#.D8.B3.D8.AC.D9.84_.D8.A7.D9.84.D8.AA.D8.BA.D9.8A.D9.8A.D8.B1.D8.A7.D8.AA"><span class="tocnumber">12.23</span> <span class="toctext">سجل التغييرات</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#.D9.85.D8.AC.D8.A7.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.A3.D8.B3.D9.85.D8.A7.D8.A1"><span class="tocnumber">13</span> <span class="toctext">مجالات الأسماء</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.A3.D8.AE.D8.B7.D8.A7.D8.A1"><span class="tocnumber">14</span> <span class="toctext">الأخطاء</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D8.A7.D8.B3.D8.AA.D8.AB.D9.86.D8.A7.D8.A1.D8.A7.D8.AA"><span class="tocnumber">15</span> <span class="toctext">الاستثناءات</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D9.85.D9.88.D9.84.D8.AF.D8.A7.D8.AA"><span class="tocnumber">16</span> <span class="toctext">المولدات</span></a></li>
+<li class="toclevel-1"><a href="#.D8.A7.D9.84.D9.85.D8.B1.D8.A7.D8.AC.D8.B9"><span class="tocnumber">17</span> <span class="toctext">المراجع</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D9.85.D8.B5.D8.A7.D8.AF.D8.B1"><span class="tocnumber">18</span> <span class="toctext">مصادر</span></a></li>
+</ul>
+</div> -->
+
+<h2>
+   <span id="بنية_لغة_PHP">
+
+   </span>
+   <span class="mw-headline" id=".D8.A8.D9.86.D9.8A.D8.A9_.D9.84.D8.BA.D8.A9_PHP">
+      بنية لغة PHP
+   </span>
+   </h2>
+<p>أفضل ما يُميّز PHP هو سهولتها للجدد عليها، لكنها في نفس الوقت توفِّر ميزاتٍ كثيرة للمبرمجين المحترفين، لا تخف من وجود قوائم طويلة بميزات PHP؛ إذ تستطيع أن تبدأ بكتابة الشيفرات بعد فترةٍ قصيرةٍ من القراءة عن هذه اللغة.
+</p><p>
+يمكن للغة PHP فعل أيّ شيء. لاحظ أنَّ PHP تُركِّز على برمجة تطبيقات الويب التي تعمل على الخوادم، أي أنَّها تستطيع فعل أيّ شيءٍ يستطيع برنامج CGI فعله، كالحصول على بيانات النماذج وتوليد المحتوى الديناميكي وإرسال واستقبل الكعكات (cookies)؛ لكن PHP تستطيع فعل المزيد...</p><div class="mw-highlight mw-highlight-lang-php mw-content-ltr" dir="ltr"><pre style="position: relative;"><span></span><span class="x">&lt;!DOCTYPE html&gt;</span>
+<span class="x">&lt;html&gt;</span>
+<span class="x">  &lt;head&gt;</span>
+<span class="x">    &lt;meta charset="utf-8"&gt;</span>
+<span class="x">    &lt;title&gt;Page Title&lt;/title&gt;</span>
+<span class="x">    &lt;link href="style.css" rel="stylesheet"&gt;</span>
+<span class="x">    &lt;script src="javascript.js"&gt;&lt;/script&gt;</span>
+<span class="x">  &lt;/head&gt;</span>
+<span class="x">  &lt;body&gt;</span>
+
+<span class="x">    </span><span class="cp">&lt;?php</span>
+      <span class="k">echo</span> <span class="s2">"Hi, I'm a PHP script!"</span><span class="p">;</span>
+    <span class="cp">?&gt;</span><span class="x"></span>
+
+<span class="x">  &lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div><p>بدلًا من الحاجة إلى الكثير من التعليمات لإخراج شيفرات HTML (كما هو الحال في C و Perl)، فإنَّ صفحات PHP تستطيع أن تحتوي على HTML مع شيفرات PHP التي تفعل «شيئًا ما» (وكانت تطبع العبارة <code>"Hi, I'm a PHP script!‎"</code> في المثال السابق). توضع شيفرة PHP ضمن <a href="/index.php?title=PHP/basic_syntax/phpmode&amp;action=edit&amp;redlink=1" class="new" title="PHP/basic syntax/phpmode (الصفحة غير موجودة)">وسمَي بداية ونهاية خاصين هما <code>‎&lt;?‎php</code> و <code>‎?&gt;‎</code></a>.
+</p><p>يمكن استخدام PHP على جميع أنظمة التشغيل الرئيسية، بما في ذلك لينكس، وأنظمة يونكس (بما في ذلك HP-UX و Solaris و OpenBSD)، ونظام ويندوز، و mac os، و RISC OS، وغير ذلك. لاحظ أيضًا أنَّ لغة PHP مدعومة من كثير من متصفحات الويب الموجودة في الوقت الراهن، بما في ذلك Apache و IIS وغيرها، وهذا يتضمن أيّ متصفح ويب يمكنه استخدام FastCGI مثل ligthttpd و Nginx، لاحظ أنَّ PHP يمكن أن تعمل كوحدة تابعة لخادم الويب (module) أو كمُفسِّر CGI.
+</p><p>ما سبق يعني أنَّ PHP تعطيك الحرية في اختيار نظام التشغيل وخادم الويب الذي تريد، أضف إلى ذلك أنَّك تستطيع اختيار نمط البرمجة الذي تريده، فإما أن تتبع نهج البرمجة الإجرائية (procedural programming) أو البرمجة كائنية التوجه (object oriented programming اختصارًا OOP)، أو خليطًا بينها.
+</p>
+<h2><span id="مجالات_استخدام_PHP"></span><span class="mw-headline" id=".D9.85.D8.AC.D8.A7.D9.84.D8.A7.D8.AA_.D8.A7.D8.B3.D8.AA.D8.AE.D8.AF.D8.A7.D9.85_PHP">مجالات استخدام PHP</span></h2>
+<ul><li>برمجة تطبيقات الويب من جهة الخادم، وهو مجال الاستخدام التقليدي والرئيسي للغة PHP، ويجب أن تكون لديك ثلاثة أشياء لفعل ذلك: مُفسِّر PHP وخادم ويب ومتصفح ويب. ستحتاج إلى تشغيل خادم ويب مضبوطٌ مع PHP، ويمكنك الوصول إلى ناتج برنامج PHP باستخدام متصفح ويب.</li>
+<li>كتابة سكربتات لتعمل من سطر الأوامر، أي يمكنك كتابة سكربت PHP لتشغيله دون أي خادم أو متصفح، ولن تحتاج إلا إلى مُفسِّر PHP في هذه الحالة. وهذا المجال مناسب لتنفيذ شيفرات معيّنة باستخدام جداول cron (على أنظمة يونكس ولينكس) أو Task Scheduler (على ويندوز). هذه السكربتات يمكن استخدامها أيضًا لإجراء عمليات معالجة النصوص.</li>
+<li>كتابة تطبيقات لسطح المكتب. لكن PHP ليست أفضل لغة لإنشاء تطبيقات لسطح المكتب مع واجهة رسومية، لكن إذا كنتَ تعرفها جيدًا فيمكنك استخدام ميزات PHP المتقدمة لفعل ذلك.</li></ul>
+<p>لستَ محدودًا إلى إخراج مستندات HTML عبر PHP، فيمكن أن تُستخدَم لغة PHP لإنشاء الصور وملفات PDF وحتى إجراء تعديلات على الفيديو، ويمكنها عرض أي نص بسهولة مثل ملفات XHTML أو XML؛ ويمكن للغة PHP توليد هذه الملفات تلقائيًا وتستطيع حفظها أيضًا إلى نظام الملفات، مما يسمح بتخزينها مؤقتًا لاستخدامات أخرى.
+</p><p>إحدى أهم ميزات PHP هي دعمها لطيفٍ واسعٍ من قواعد البيانات، فاستخدام قاعدة بيانات مع PHP هو أمرٌ بسيطٌ جدًا، إذ نستطيع استخدام دوال خاصة بقاعدة البيانات مثل دوال mysql، أو باستخدام طبقة تجريد مثل PDO، أو بالاتصال إلى قاعدة البيانات باستخدام معيار Open Database Connection عبر إضافة ODBC؛ أما بقية أنواع قواعد البيانات فيمكن الاتصال بها عبر cURL أو المقابس (sockets) مثل CouchDB.
+</p><p>تدعم PHP التواصل مع خدمات أخرى تستخدم بروتوكولات مثل LDAP أو IMAP أو NNTP أو POP3 أو HTTP وغيرها الكثير، ويمكنك أيضًا إنشاء اتصالات شبكية خام والتعامل مع أي بروتوكول تشاء.
+</p><p>تملك PHP أيضًا ميزات تتعلق بمعالجة النصوص، وهذا يتضمن التعابير النمطية (regular expressions) وتفسير مستندات XML والوصول إليها.
+</p>
+<h2><span id="الضبط"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.B6.D8.A8.D8.B7"><a href="/PHP/configuration" title="PHP/configuration">الضبط</a></span></h2>
+<p>كيفية ضبط لغة PHP عبر مختلف أنواع ملفات الضبط، وطرائق تعديلها.
+</p>
+<h2><span id="بنية_اللغة"></span><span class="mw-headline" id=".D8.A8.D9.86.D9.8A.D8.A9_.D8.A7.D9.84.D9.84.D8.BA.D8.A9"><a href="/PHP/basic_syntax" title="PHP/basic syntax">بنية اللغة</a></span></h2>
+<p>تبيان أنواع وسوم لغة PHP، وطريقة دمجها مع HTML، وشرح بعض خصائصها البنيوية (ومن بينها التعليقات).
+</p>
+<h2><span id="أنواع_البيانات"></span><span class="mw-headline" id=".D8.A3.D9.86.D9.88.D8.A7.D8.B9_.D8.A7.D9.84.D8.A8.D9.8A.D8.A7.D9.86.D8.A7.D8.AA"><a href="/PHP/Types" title="PHP/Types">أنواع البيانات</a></span></h2>
+<p>لا يعيّن المبرمج نوع المتغير عادةً، بل تُعيِّنُه لغة PHP أثناء التنفيذ بالاعتماد على محتوى المتغير المستخدم.
+</p>
+<h3><span id="القيم_المنطقية_(boolean)"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.82.D9.8A.D9.85_.D8.A7.D9.84.D9.85.D9.86.D8.B7.D9.82.D9.8A.D8.A9_.28boolean.29"><a href="/PHP/boolean" title="PHP/boolean">القيم المنطقية (boolean)</a></span></h3>
+<p>القيم المنطقية (boolean) من أبسط الأنواع، فالتعبير المنطقي يُعبِّر عن صحّة تعبيرٍ ما، فإما أن تكون قيمة التعبير صحيحةً&nbsp;<code>TRUE</code>&nbsp;أو خطأً&nbsp;<code>FALSE</code>.
+</p>
+<h3><span id="الأعداد_الصحيحة_(integer)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.B5.D8.AD.D9.8A.D8.AD.D8.A9_.28integer.29"><a href="/PHP/integer" title="PHP/integer">الأعداد الصحيحة (integer)</a></span></h3>
+<p>العدد الصحيح هو عدد من المجموعة ℤ = {…, -2, -1, 0, 1, 2, …}‎‎.
+</p>
+<h3><span id="الأعداد_العشرية_(float)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.B9.D8.B4.D8.B1.D9.8A.D8.A9_.28float.29"><a href="/PHP/float" title="PHP/float">الأعداد العشرية (float)</a></span></h3>
+<p>الأعداد العشرية (تعرف أيضا بالأعداد الحقيقة real number أو doubles أو float)&nbsp;هي الأعداد التي تملك قسمًا عشريًا إضافةً إلى القسم الصحيح.
+</p>
+<h3><span id="السلاسل_النصية_(string)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.B3.D9.84.D8.A7.D8.B3.D9.84_.D8.A7.D9.84.D9.86.D8.B5.D9.8A.D8.A9_.28string.29"><a href="/PHP/string" title="PHP/string">السلاسل النصية (string)</a></span></h3>
+<p>السلسلة النصية هي سلسلة من الأحرف، إذ يكون كل حرف ممثلًا ببايت.
+</p>
+<h3><span id="المصفوفات_(array)"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.B5.D9.81.D9.88.D9.81.D8.A7.D8.AA_.28array.29"><a href="/PHP/array" title="PHP/array">المصفوفات (array)</a></span></h3>
+<p>المصفوفة في PHP هي خريطة (map) مرتّبة، والخريطة هي نوع ترتبط فيه القيم مع المفاتيح.
+</p>
+<h3><span id="الكائنات_(object)"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA_.28object.29"><a href="/PHP/object" title="PHP/object">الكائنات (object)</a></span></h3>
+<p>تُنشَأ الكائنات في PHP بتهيئة صنف (class).
+</p>
+<h3><span id="ردود_النداء_(callables)"></span><span class="mw-headline" id=".D8.B1.D8.AF.D9.88.D8.AF_.D8.A7.D9.84.D9.86.D8.AF.D8.A7.D8.A1_.28callables.29"><a href="/PHP/callable" title="PHP/callable">ردود النداء (callables)</a></span></h3>
+<p>يمكن أن الإشارة إلى رد النداء (Callbacks) باستخدام نوع البيانات (callable) منذ إصدار PHP 5.4، وهي الدوال التي تستدعيها دوال أخرى لإجراء عمليات.
+</p>
+<h3><span id="المتغيرات_التكرارية_(iterables)"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D8.AA.D9.83.D8.B1.D8.A7.D8.B1.D9.8A.D8.A9_.28iterables.29"><a href="/PHP/iterable" title="PHP/iterable">المتغيرات التكرارية (iterables)</a></span></h3>
+<p>إن المتغير التكراري Iterable هو شبه نوع (نوع زائف، pseudo-type) عُرِّفَ في الإصدار 7.1 من PHP وهو يقبل أية مصفوفة أو كائن يستخدم واجهة&nbsp;<code>Traversable</code>&nbsp;(أي Traversable interface)، كلا النوعين يمكن تكراره باستخدام حلقة&nbsp;<code><a href="/PHP/foreach" title="PHP/foreach">foreach</a></code>&nbsp;ويمكن أن يُستخدم مع تعبير yield داخل&nbsp;<a href="/PHP/generators" title="PHP/generators">دالة مولِّدة</a>&nbsp;(generator).
+</p>
+<h3><span id="الموارد_(resources)"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D9.88.D8.A7.D8.B1.D8.AF_.28resources.29"><a href="/PHP/resource" title="PHP/resource">الموارد (resources)</a></span></h3>
+<p>المورد هو متغير خاص يحمل مرجعيةً إلى مورد خارجي.
+</p>
+<h3><span class="mw-headline" id="NULL"><a href="/PHP/null" title="PHP/null">NULL</a></span></h3>
+<p>تمثل القيمة الخاصة&nbsp;<code>NULL</code>&nbsp;متغيرًا دون قيمة، فالقيمة&nbsp;<code>NULL</code>&nbsp;هي القيمة الوحيد الممكنة من نوع البيانات null.
+</p>
+<h3><span id="أشباه_الأنواع_(pseudo-types)"></span><span class="mw-headline" id=".D8.A3.D8.B4.D8.A8.D8.A7.D9.87_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28pseudo-types.29"><a href="/PHP/pseudo_types" title="PHP/pseudo types">أشباه الأنواع (pseudo-types)</a></span></h3>
+<p>أشباه الأنواع هي كلمات مفتاحيَّة مستخدمة في توثيق PHP لتحديد الأنواع أو القيم التي يمكن أن يمتلكها المعامل ولا يمكن استخدامها في الشيفرات البرمجية.
+</p>
+<h3><span id="التعامل_مع_الأنواع_(Type_Juggling)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AA.D8.B9.D8.A7.D9.85.D9.84_.D9.85.D8.B9_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28Type_Juggling.29"><a href="/PHP/type_juggling" title="PHP/type juggling">التعامل مع الأنواع (Type Juggling)</a></span></h3>
+<p>وذلك يتضمن طريقة تحويل الأنواع بين بعضها بعضًا.
+</p>
+<h2><span id="المتغيرات"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA"><a href="/PHP/variables" title="PHP/variables">المتغيرات</a></span></h2>
+<p>يكون التعبير عن المتغيرات في PHP باستخدام علامة $ متبوعة باسم المتغير والذي يكون حساسًا لحالة الأحرف.
+</p>
+<h3><span id="المتغيرات_المعرفة_مسبقًا"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D9.85.D8.B9.D8.B1.D9.81.D8.A9_.D9.85.D8.B3.D8.A8.D9.82.D9.8B.D8.A7"><a href="/PHP/predefined_variables" title="PHP/predefined variables">المتغيرات المعرفة مسبقًا</a></span></h3>
+<p>تقدّم PHP عددًا كبيرًا من المتغيرات المعرّفة مسبقًا ضمن الشيفرات العاملة بهذه اللغة.
+</p>
+<h3><span id="نطاق_المتغيرات"></span><span class="mw-headline" id=".D9.86.D8.B7.D8.A7.D9.82_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA"><a href="/PHP/variables_scope" title="PHP/variables scope">نطاق المتغيرات</a></span></h3>
+<p>النطاق (scope) هو السياق الذي تعرّف ضمنه المتغيرات.
+</p>
+<h3><span id="المتغيرات_المتغيرة"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A9"><a href="/PHP/variable_variables" title="PHP/variable variables">المتغيرات المتغيرة</a></span></h3>
+<p>قد تحتاج في بعض الأحيان إلى استخدام أسماء متغيّرة للمتغيرات، بمعنى أن تعيين اسم المتغيّر واستخدامه يكون بصورة ديناميكية. المتغيّر المتغير (variable variable) يأخذ قيمة متغيّر معين ويستخدمه كاسم لمتغير آخر.&nbsp;
+</p>
+<h3><span id="المتغيرات_من_مصادر_خارجية"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D8.B1.D8.A7.D8.AA_.D9.85.D9.86_.D9.85.D8.B5.D8.A7.D8.AF.D8.B1_.D8.AE.D8.A7.D8.B1.D8.AC.D9.8A.D8.A9"><a href="/PHP/external_variables" title="PHP/external variables">المتغيرات من مصادر خارجية</a></span></h3>
+<p>وتأتي هذه المتغيرات أساسيًا عبر GET و POST (والكعكات).
+</p>
+<h2><span id="الثوابت"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AB.D9.88.D8.A7.D8.A8.D8.AA"><a href="/PHP/constants" title="PHP/constants">الثوابت</a></span></h2>
+<p>الثابت هو معرّف (اسم) لقيمة بسيطة، وكما هو واضح من الاسم فإنّ هذه القيمة غير قابلة للتبديل أثناء تنفيذ الشيفرة.
+</p>
+<h2><span id="التعابير_(Expressions)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AA.D8.B9.D8.A7.D8.A8.D9.8A.D8.B1_.28Expressions.29"><a href="/PHP/expressions" title="PHP/expressions">التعابير (Expressions)</a></span></h2>
+<p>تعدّ التعابير إحدى الوحدات البنائية الأكثر أهمية في PHP، ففي هذه اللغة كل ما تكتبه تقريبًا هو عبارة عن تعبير، لذا فإن أبسط وأدقّ تعريف للتعابير هو: "كلّ ما يمتلك قيمة".
+</p>
+<h2><span id="العوامل_في_PHP"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D9.81.D9.8A_PHP"><a href="/PHP/Operators" title="PHP/Operators">العوامل في PHP</a></span></h2>
+<p>يأخذ العامل (operator) قيمة واحدة أو أكثر (أو تعابير حسب اصطلاحات البرمجة) ويعطي قيمة أخرى (بحيث تتحول البنية نفسها إلى تعبير).
+</p>
+<h3><span id="أولوية_العوامل_(Operator_Precedence)"></span><span class="mw-headline" id=".D8.A3.D9.88.D9.84.D9.88.D9.8A.D8.A9_.D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.28Operator_Precedence.29"><a href="/PHP/precedence_operators" title="PHP/precedence operators">أولوية العوامل (Operator Precedence)</a></span></h3>
+<p>المقصود بأولوية العوامل هو تحديد مدى "قوة" ربط العامل لتعبيرين مع بعضهما البعض.
+</p>
+<h3><span id="العوامل_الحسابية_(Arithmetic_Operators)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AD.D8.B3.D8.A7.D8.A8.D9.8A.D8.A9_.28Arithmetic_Operators.29"><a href="/PHP/arithmetic_operators" title="PHP/arithmetic operators">العوامل الحسابية (Arithmetic Operators)</a></span></h3>
+<p>العوامل الحسابية الرياضية الأساسية (كالجمع والضرب والقسمة ...إلخ.).
+</p>
+<h3><span id="عوامل_الإسناد_(Assignment_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A5.D8.B3.D9.86.D8.A7.D8.AF_.28Assignment_Operators.29"><a href="/PHP/assignment_operators" title="PHP/assignment operators">عوامل الإسناد (Assignment Operators)</a></span></h3>
+<p>العامل "=" هو عامل الإسناد الأساسي. قد تظنّ للوهلة الأولى أن هذا العامل يعني "المساواة"، ولكنّه ليس كذلك. وظيفة هذا العامل هي ربط قيمة التعبير الموجود على جانبه الأيمن بالتعبير الموجود على الجانب الأيسر.
+</p>
+<h3><span id="عوامل_الأعداد_الثنائية_(Bitwise_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A3.D8.B9.D8.AF.D8.A7.D8.AF_.D8.A7.D9.84.D8.AB.D9.86.D8.A7.D8.A6.D9.8A.D8.A9_.28Bitwise_Operators.29"><a href="/PHP/bitwise_operators" title="PHP/bitwise operators">عوامل الأعداد الثنائية (Bitwise Operators)</a></span></h3>
+<p>تتيح عوامل الأعداد الثنائية تقدير ومعالجة بتات معينة ضمن العدد الصحيح.
+</p>
+<h3><span id="عوامل_المقارنة_(Comparison_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D9.82.D8.A7.D8.B1.D9.86.D8.A9_.28Comparison_Operators.29"><a href="/PHP/comparison_operators" title="PHP/comparison operators">عوامل المقارنة (Comparison Operators)</a></span></h3>
+<p>تتيح عوامل المقارنة -كما هو واضح من اسمها- مقارنة قيمتين مختلفتين.
+</p>
+<h3><span id="عوامل_التحكم_بالأخطاء_(Error_Control_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AA.D8.AD.D9.83.D9.85_.D8.A8.D8.A7.D9.84.D8.A3.D8.AE.D8.B7.D8.A7.D8.A1_.28Error_Control_Operators.29"><a href="/PHP/errorcontrol_operators" title="PHP/errorcontrol operators">عوامل التحكم بالأخطاء (Error Control Operators)</a></span></h3>
+<p>تدعم PHP عاملًا واحدًا للتحكّم بالأخطاء وهو علامة (@). تتجاهل PHP جميع الأخطاء الناتجة من أي تعبير تُلحق به هذه العلامة.
+</p>
+<h3><span id="عوامل_التنفيذ_(Execution_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.AA.D9.86.D9.81.D9.8A.D8.B0_.28Execution_Operators.29"><a href="/PHP/execution_operators" title="PHP/execution operators">عوامل التنفيذ (Execution Operators)</a></span></h3>
+<p>تدعم PHP عامل تنفيذ واحد هو العلامة (``) ‏backtics، ويجب الانتباه إلى أنها ليست علامة الاقتباس المفردة. ستحاول PHP تنفيذ ما هو مكتوب ضمن هذه العلامتين على أنّه من أوامر الصدفة، وستعيد الناتج.
+</p>
+<h3><span id="عوامل_الزيادة_والنقصان_(Incrementing/Decrementing_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.B2.D9.8A.D8.A7.D8.AF.D8.A9_.D9.88.D8.A7.D9.84.D9.86.D9.82.D8.B5.D8.A7.D9.86_.28Incrementing.2FDecrementing_Operators.29"><a href="/PHP/increment_operators" title="PHP/increment operators">عوامل الزيادة والنقصان (Incrementing/Decrementing Operators)</a></span></h3>
+<p>تدعم PHP عوامل الزيادة والنقصان السابقة واللاحقة المماثلة للعوامل المستخدمة في لغة C.
+</p>
+<h3><span id="العوامل_المنطقية_(Logical_Operators)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D9.86.D8.B7.D9.82.D9.8A.D8.A9_.28Logical_Operators.29"><a href="/PHP/logical_operators" title="PHP/logical operators">العوامل المنطقية (Logical Operators)</a></span></h3>
+<p>وهي العوامل التي تستعمل في العمليات المنطقية (مثل AND و OR و XOR ...إلخ.).
+</p>
+<h3><span id="عوامل_السلاسل_النصية_(String_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.B3.D9.84.D8.A7.D8.B3.D9.84_.D8.A7.D9.84.D9.86.D8.B5.D9.8A.D8.A9_.28String_Operators.29"><a href="/PHP/string_operators" title="PHP/string operators">عوامل السلاسل النصية (String Operators)</a></span></h3>
+<p>هناك عاملان&nbsp;<a href="/PHP/string" title="PHP/string">للسلاسل النصية</a>. الأول هو عامل الربط ('<code>.</code>') والذي يربط بين المعاملين الموجودين على جانبيه. العامل الثاني هو عامل الربط الإسنادي ('‎<code>.=‎</code>') والذي يُلحق المعامل الموجود في الجهة اليمنى بالمعامل الموجود في الجهة اليسرى.
+</p>
+<h3><span id="عوامل_المصفوفات_(Array_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D9.85.D8.B5.D9.81.D9.88.D9.81.D8.A7.D8.AA_.28Array_Operators.29"><a href="/PHP/array_operators" title="PHP/array operators">عوامل المصفوفات (Array Operators)</a></span></h3>
+<p>هي العوامل التي تجرى عملياتها على المصفوفات.
+</p>
+<h3><span id="عوامل_الأنواع_(Type_Operators)"></span><span class="mw-headline" id=".D8.B9.D9.88.D8.A7.D9.85.D9.84_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9_.28Type_Operators.29"><a href="/PHP/type_operators" title="PHP/type operators">عوامل الأنواع (Type Operators)</a></span></h3>
+<p>تستخدم&nbsp;<code>instanceof</code>&nbsp;لتحديد ما إذا كان المتغير كائنًا مهيّئًا من صنف معين.
+</p>
+<h2><span id="بنى_التحكم"></span><span class="mw-headline" id=".D8.A8.D9.86.D9.89_.D8.A7.D9.84.D8.AA.D8.AD.D9.83.D9.85"><a href="/PHP/Control_Structures" title="PHP/Control Structures">بنى التحكم</a></span></h2>
+<h3><span class="mw-headline" id="if"><code><a href="/PHP/if" title="PHP/if">if</a></code></span></h3>
+<p>بنية if هي واحدة من أهم الميزات المتوفّرة في العديد من اللغات البرمجية، ومن ضمنها PHP. إذ تتيح تنفيذ أجزاء من الشيفرة اعتمادًا على شروط معينة.
+</p>
+<h3><span class="mw-headline" id="else"><code><a href="/PHP/else" title="PHP/else">else</a></code></span></h3>
+<p>قد ترغب في كثير من الأحيان تنفيذ عبارة معينة عند تحقق شرط معين وتنفيذ عبارة أخرى في حال عدم تحقق الشرط. هنا يأتي دور&nbsp;<code>else</code>، والتي تعمل على تمديد عبارة&nbsp;<code><a href="/PHP/if" title="PHP/if">if</a></code>&nbsp;لتنفيذ عبارة أخرى في حال أدّى حساب عبارة&nbsp;<code><a href="/PHP/if" title="PHP/if">if</a></code>&nbsp;إلى النتيجة&nbsp;<code>FALSE</code>.
+</p>
+<h3><span id="elseif/else_if"></span><span class="mw-headline" id="elseif.2Felse_if"><code><a href="/PHP/elseif" title="PHP/elseif">elseif/else if</a></code></span></h3>
+<p>كما هو واضح من الاسم فإنّ هذه العبارة هي مزيج من&nbsp;<code><a href="/PHP/if" title="PHP/if">if</a></code>&nbsp;و&nbsp;<code><a href="/PHP/else" title="PHP/else">else</a></code>، وكما هو الحال مع&nbsp;<code><a href="/PHP/else" title="PHP/else">else</a></code>&nbsp;يمكن توسيع عبارة&nbsp;<code><a href="/PHP/if" title="PHP/if">if</a></code>&nbsp;لتنفيذ عبارة أخرى في حال كانت نتيجة تعبير&nbsp;<code><a href="/PHP/if" title="PHP/if">if</a></code>&nbsp;هي&nbsp;<code>FALSE</code>. ولكن، على العكس من&nbsp;<code><a href="/PHP/else" title="PHP/else">else</a></code>، فإن&nbsp;<code>elseif</code>&nbsp;تنفذ ذلك التعبير البديل في حالة واحدة فقط وهي أن تكون نتيجة التعبير الشرطي المتعلق بعبارة&nbsp;<code>elseif</code>&nbsp;هي&nbsp;<code>TRUE</code>.&nbsp;
+</p>
+<h3><span class="mw-headline" id="while"><code><a href="/PHP/while" title="PHP/while">while</a></code></span></h3>
+<p>تعد حلقات while التكرارية أبسط أنواع الحلقات في PHP، وتعمل بطريقة مماثلة لنظيرتها في لغة C.
+</p>
+<h3><span class="mw-headline" id="do-while"><code><a href="/PHP/do-while" title="PHP/do-while">do-while</a></code></span></h3>
+<p>حلقات&nbsp;<code>do-while</code>&nbsp;مشابهة جدًّا لحلقات&nbsp;<code><a href="/PHP/while" title="PHP/while">while</a></code>، باستثناء أنّها عملية التحقق من الشرط تحدث في نهاية الدورة بدلًا من بدايتها. ما يميز هذه الحلقات عن حلقات while هو أنّ الدورة الأولى في حلقات&nbsp;<code>do-while</code>&nbsp;ستنفّذ في جميع الأحوال (تحدث عملية التحقق في نهاية الدورة فقط) في حين أن الدورة الأولى في حلقات&nbsp;<code><a href="/PHP/while" title="PHP/while">while</a></code>&nbsp;قد لا تنفّذ بالضرورة (تحدث عملية التحقق في بداية كل دورة، وإن كانت النتيجة FALSE منذ البداية تتوقف الحلقة عن العمل مباشرة).
+</p>
+<h3><span class="mw-headline" id="for"><code><a href="/PHP/for" title="PHP/for">for</a></code></span></h3>
+<p>تعدّ حلقات&nbsp;<code>for</code>&nbsp;النوع الأكثر تعقيدًا من الحلقات في PHP، وهي مشابهة لنظيرتها في لغة C.
+</p>
+<h3><span class="mw-headline" id="foreach"><code><a href="/PHP/foreach" title="PHP/foreach">foreach</a></code></span></h3>
+<p>تقدّم بنية foreach طريقة سهلة للتنقل بين عناصر المصفوفات، وتعمل هذه البنية مع المصفوفات والكائنات فقط، ويؤدي استخدامها مع متغير ذي نوع بيانات مختلف أو متغير غير مهيئ إلى إطلاق خطأ.
+</p>
+<h3><span class="mw-headline" id="break"><code><a href="/PHP/break" title="PHP/break">break</a></code></span></h3>
+<p>تنهي&nbsp;<code>break</code>&nbsp;تنفيذ حلقات&nbsp;<code><a href="/PHP/for" title="PHP/for">for</a></code>&nbsp;أو&nbsp;<code><a href="/PHP/foreach" title="PHP/foreach">foreach</a></code>&nbsp;أو&nbsp;<code><a href="/PHP/while" title="PHP/while">while</a></code>&nbsp;أو&nbsp;<code><a href="/PHP/do-while" title="PHP/do-while">do-while</a></code>&nbsp;أو بنية&nbsp;<code><a href="/PHP/switch" title="PHP/switch">switch</a></code>.
+</p>
+<h3><span class="mw-headline" id="continue"><code><a href="/PHP/continue" title="PHP/continue">continue</a></code></span></h3>
+<p>تستخدم continue في الحلقات التكرارية لتجاوز ما يأتي بعدها في الحلقة التكرارية والاستمرار في تنفيذ الشيفرة حسب الشرط المعتمد في الحلقة ثم الانتقال إلى بداية الدورة التالية.
+</p>
+<h3><span class="mw-headline" id="switch"><code><a href="/PHP/switch" title="PHP/switch">switch</a></code></span></h3>
+<p>تشبه عبارة&nbsp;<code>switch</code>&nbsp;سلسلةً من عبارات if مطبّقة على نفس التعبير. قد تحتاج في بعض الأحيان إلى مقارنة نفس المتغير (أو التعبير) مع قيم مختلفة (حالات cases)، وتنفيذ شيفرة مختلفة بالاعتماد على ذلك، وهذه هي وظيفة عبارة&nbsp;<code>switch</code>.
+</p>
+<h3><span class="mw-headline" id="declare"><code><a href="/PHP/declare" title="PHP/declare">declare</a></code></span></h3>
+<p>تستخدم بنية&nbsp;<code>declare</code>&nbsp;لتعيين موجّهات التنفيذ (execution directives) لكتلة من الشيفرة، وصيغة&nbsp;<code>declare</code>&nbsp;مشابهة لبنى التحكم في تدفق الشيفرة.
+</p>
+<h3><span class="mw-headline" id="return"><code><a href="/PHP/return" title="PHP/return">return</a></code></span></h3>
+<p>تعيد تنفيذ البرنامج إلى الوحدة التي قامت بالاستدعاء، وسيستمر التنفيذ إلى التعبير الذي يلي تعبير الاستدعاء.
+</p>
+<h3><span class="mw-headline" id="require"><code><a href="/PHP/require" title="PHP/require">require</a></code></span></h3>
+<p>العبارة&nbsp;<code>require</code>&nbsp;مطابقة للعبارة&nbsp;<code><a href="/PHP/include" title="PHP/include">include</a></code>&nbsp;باستثناء أنّها تطلق خطأ من نوع&nbsp;<code>E_COMPLE_ERROR</code>&nbsp;في حال فشلها في جلب الملف.
+</p>
+<h3><span class="mw-headline" id="include"><code><a href="/PHP/include" title="PHP/include">include</a></code></span></h3>
+<p>تعمل عبارة include على تضمين ومعالجة الملف المحدّد.
+</p>
+<h3><span class="mw-headline" id="require_once"><code><a href="/index.php?title=PHP/require-once&amp;action=edit&amp;redlink=1" class="new" title="PHP/require-once (الصفحة غير موجودة)">require_once</a></code></span></h3>
+<p>عبارة&nbsp;<code>require_once</code>&nbsp;مطابقة للعبارة&nbsp;<code><a href="/PHP/require" title="PHP/require">require</a></code>&nbsp;باستثناء أن PHP ستتحقق مما إذا كان الملف مضمّنًا أم لا، وذلك لتجنّب تضمينه (require) مرة أخرى.
+</p>
+<h3><span class="mw-headline" id="include_once"><code><a href="/index.php?title=PHP/include-once&amp;action=edit&amp;redlink=1" class="new" title="PHP/include-once (الصفحة غير موجودة)">include_once</a></code></span></h3>
+<p>تُضمِّن العبارة&nbsp;<code>include_once</code>&nbsp;الملفّ المحدد وتعالجه أثناء تنفيذ الشيفرة. هذه السلوك مشابه لعبارة&nbsp;<code><a href="/PHP/include" title="PHP/include">include</a></code>&nbsp;والفرق الوحيد هنا هو إن كانت شيفرة ذلك الملف مضمّنة من قبل فإنّها لن تُضمِّنَه مرة أخرى، وترجع&nbsp;<code>include_once</code>&nbsp;القيمة&nbsp;<code>TRUE</code>، وهذا السلوك متوقع من اسم العبارة.
+</p>
+<h3><span class="mw-headline" id="goto"><code><a href="/PHP/goto" title="PHP/goto">goto</a></code></span></h3>
+<p>يمكن استخدام عامل&nbsp;<code>goto</code>&nbsp;للانتقال إلى قسم آخر في البرنامج.
+</p>
+<h2><span id="الدوال"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84"><a href="/PHP/Functions" title="PHP/Functions">الدوال</a></span></h2>
+<h3><span id="الدوال_المعرّفة_من_طرف_المستخدم"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.B9.D8.B1.D9.91.D9.81.D8.A9_.D9.85.D9.86_.D8.B7.D8.B1.D9.81_.D8.A7.D9.84.D9.85.D8.B3.D8.AA.D8.AE.D8.AF.D9.85"><a href="/PHP/user_defined_functions" title="PHP/user defined functions">الدوال المعرّفة من طرف المستخدم</a></span></h3>
+<p>تتبع أسماء الدوالّ نفس القواعد المتبّعة في اللغة للتسمية. يبدأ الاسم الصحيح للدالة بحرف أو شرطة سفلية، متبوعًا بأيّ عددٍ من الحروف أو الأرقام أو الشرطات السفلية. ويمكن التعبير عن هذه الصيغة باستخدام التعابير النمطية بالصورة التالية:&nbsp;<code>‎[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*‎</code>.
+</p>
+<h3><span id="معاملات_الدوال"></span><span class="mw-headline" id=".D9.85.D8.B9.D8.A7.D9.85.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84"><a href="/PHP/function_arguments" title="PHP/function arguments">معاملات الدوال</a></span></h3>
+<p>يمكن تمرير المعلومات إلى الدوالّ بواسطة قائمة المعاملات argument list، وهي قائمة من التعابير المفصولة بالعلامة (,)، وتُعالج هذه المعاملات من اليسار إلى اليمين.
+</p>
+<h3><span id="إعادة_القيم"></span><span class="mw-headline" id=".D8.A5.D8.B9.D8.A7.D8.AF.D8.A9_.D8.A7.D9.84.D9.82.D9.8A.D9.85"><a href="/PHP/returning_values" title="PHP/returning values">إعادة القيم</a></span></h3>
+<p>يمكن إعادة القيم باستخدام عبارة&nbsp;<code><a href="/PHP/return" title="PHP/return">return</a></code>&nbsp;الاختيارية، ويمكن إعادة أيّ نوع من أنواع القيم ومن ضمنها المصفوفات والكائنات. يؤدي استخدام هذه العبارة إلى إيقاف تنفيذ الدالة فورًا والعودة إلى السطر الذي استدعيت منه تلك الدالة. راجع&nbsp;<code><a href="/PHP/return" title="PHP/return">return</a></code>&nbsp;للمزيد من المعلومات.
+</p>
+<h3><span id="الدوال_المتغيّرة"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.AA.D8.BA.D9.8A.D9.91.D8.B1.D8.A9"><a href="/PHP/variable_functions" title="PHP/variable functions">الدوال المتغيّرة</a></span></h3>
+<p>تدعم PHP مفهوم الدوال المتغيّرة والذي يعني أنّه في حال إلحاق قوسين إلى نهاية اسم أحد المتغيّرات، فإنّ اللغة ستبحث عن دالة تحمل الاسم ذاته، وستحاول تنفيذها. يمكن الاستفادة من هذه الميزة في الاستدعاءات الخلفية callbacks، وجداول الدوال وما إلى ذلك.
+</p>
+<h3><span id="الدوال_الداخلية_(المضمّنة)"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D8.AF.D8.A7.D8.AE.D9.84.D9.8A.D8.A9_.28.D8.A7.D9.84.D9.85.D8.B6.D9.85.D9.91.D9.86.D8.A9.29"><a href="/PHP/internal_functions" title="PHP/internal functions">الدوال الداخلية (المضمّنة)</a></span></h3>
+<p>تقدّم PHP الكثير من الدوال والبنى الأساسية والمضمّنة في اللغة. هناك أيضًا دوال تتطلب وجود إضافة خاصّة باللغة، وعدا ذلك سيظهر الخطأ "undefined function".
+</p>
+<h3><span id="الدوال_المجهولة"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AF.D9.88.D8.A7.D9.84_.D8.A7.D9.84.D9.85.D8.AC.D9.87.D9.88.D9.84.D8.A9"><a href="/PHP/anonymous_functions" title="PHP/anonymous functions">الدوال المجهولة</a></span></h3>
+<p>الدوال المجهولة (anonymous functions) التي تُعرَف أيضًا بالمصطلح (closures) تسمح بإنشاء دالة ليس لها اسم محدد. غالبًا ما تستخدم هذه الدوال للحصول على قيمتها كمعاملات استدعاء راجع&nbsp;<a href="/PHP/callable" title="PHP/callable">callback</a>، ولها استخدامات أخرى.
+</p>
+<h2><span id="البرمجة_كائنية_التوجه"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.A8.D8.B1.D9.85.D8.AC.D8.A9_.D9.83.D8.A7.D8.A6.D9.86.D9.8A.D8.A9_.D8.A7.D9.84.D8.AA.D9.88.D8.AC.D9.87"><a href="/PHP/OOP" title="PHP/OOP">البرمجة كائنية التوجه</a></span></h2>
+<p>بدءًا من الإصدار الخامس من اللغة، أعيدت كتابة نموذج الكائنات للحصول على أداء أفضل وإضافة المزيد من الميزات، وقد كان هذا من التغييرات الكبيرة في اللغة، إذ قدّم الإصدار الخامس نموذج مكتملًا للكائنات.
+</p>
+<h3><span id="الخاصيات"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AE.D8.A7.D8.B5.D9.8A.D8.A7.D8.AA"><a href="/PHP/properties" title="PHP/properties">الخاصيات</a></span></h3>
+<p>تطلق تسمية "الخاصيات properties" على المتغيّرات المعرّفة ضمن الأصناف، وهناك تسميات أخرى مثل "المعاملات" أو "الحقول"، ولكن سنستخدم التسمية الأولى "الخاصيات" في هذا الدليل. تعرّف الخاصيات باستخدام إحدى الكلمات المفتاحية public، أو protected، أو private تتبعها عبارة تصريح عن متغير اعتيادي. يمكن أن يتضمّن هذا التصريح عملية تهيئة initialization، ولكن يجب أن تكون هذه التهيئة ذات قيمة ثابتة، بمعنى أنّه يجب أن تكون قابلة للمعالجة في وقت التصريف ويجب أن لا تعتمد على المعلومات المتاحة في وقت التشغيل لغرض المعالجة.
+</p>
+<h3><span id="ثوابت_الأصناف"></span><span class="mw-headline" id=".D8.AB.D9.88.D8.A7.D8.A8.D8.AA_.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><a href="/PHP/class_constants" title="PHP/class constants">ثوابت الأصناف</a></span></h3>
+<p>يمكن تعريف قيم ثابتة لا يمكن تعديلها ولكل صنفٍ على حدة. تختلف الثوابت عن المتغيرات الاعتيادية في عدم استخدام العلامة&nbsp;<code>$</code>&nbsp;للتصريح عنها أو استخدامها. تمتلك ثوابت الأصناف قابلية رؤية من نوع public.
+</p>
+<h3><span id="التحميل_التلقائي_للأصناف"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AA.D8.AD.D9.85.D9.8A.D9.84_.D8.A7.D9.84.D8.AA.D9.84.D9.82.D8.A7.D8.A6.D9.8A_.D9.84.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><a href="/PHP/autoloading" title="PHP/autoloading">التحميل التلقائي للأصناف</a></span></h3>
+<p>يُنشئ أغلب المطوّرين الذي يكتبون تطبيقات كائنية التوجه ملف PHP واحد لكل صنف. وهنا تظهر مشكلة مزعجة للغاية، وهي الحاجة إلى كتابة قائمة طويلة بالأصناف التي يجب تضمينها للبدء بتنفيذ الشيفرة (قائمة لكل صنف).
+</p><p>لم يعد هذا الأمر ضروريًا في الإصدار الخامس من اللغة، إذ تسجّل الدالة&nbsp;<code>spl_autoload_register()</code>‎‎ عددًا غير محدّدٍ من المحمّلات التلقائية لتتيح إمكانية التحميل التلقائي للأصناف والواجهات غير المعرّفة في ملف الشيفرة. يمنح تسجيلُ المحمّلات التلقائية اللغةَ فرصة أخيرة لتحميل الصنف أو الواجهة قبل أن تتوقف الشيفرة عن العمل وتطلق خطأً.
+</p>
+<h3><span id="التوابع_البانية_والهادمة"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AA.D9.88.D8.A7.D8.A8.D8.B9_.D8.A7.D9.84.D8.A8.D8.A7.D9.86.D9.8A.D8.A9_.D9.88.D8.A7.D9.84.D9.87.D8.A7.D8.AF.D9.85.D8.A9"><a href="/PHP/decon" title="PHP/decon">التوابع البانية والهادمة</a></span></h3>
+<p>تتيح لغة PHP للمطورين التصريح عن تابع بانٍ في الأصناف. كل صنف يمتلك تابعًا بانيًا يستدعي هذا التابع مع كل كائن جديد يُنشأ من ذلك الصنف؛ لهذا يعد هذا التابع ملائمًا لعمليات التهيئة التي قد يحتاج لها الكائن قبل استخدامه.
+</p><p>تقدّم PHP 5 مفهوم الدوال الهادمة وهو مفهوم شائع في لغات البرمجة كائنية التوجّه مثل C++‎. تُستدعى الدالة الهادمة عندما لا يكون هناك أي مرجع لكائن معين.
+</p>
+<h3><span id="قابلية_الرؤية"></span><span class="mw-headline" id=".D9.82.D8.A7.D8.A8.D9.84.D9.8A.D8.A9_.D8.A7.D9.84.D8.B1.D8.A4.D9.8A.D8.A9"><a href="/PHP/properties_visibility" title="PHP/properties visibility">قابلية الرؤية</a></span></h3>
+<p>يمكن تعريف قابلية رؤية خاصية أو تابع أو (بدءًا من الإصدار 7.1.0 من اللغة) ثابت بأنّها إلحاق صيغة التصريح بإحدى الكلمات المفتاحية public، أو protected، أو private. يتيح التصريح من نوع public الوصول إلى أعضاء الصنف من أي مكان، ويتيح التصريح من نوع protected الوصول إلى الأعضاء من داخل الصنف نفسه أو الأصناف التي ترث الصنف أو تورّثه، أما التصريح من نوع private فيتيح الوصول إلى الأعضاء من داخل الصنف الذي عرِّف فيه ذلك العضو حصرًا.
+</p>
+<h3><span id="وراثة_الكائنات"></span><span class="mw-headline" id=".D9.88.D8.B1.D8.A7.D8.AB.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><a href="/PHP/class_inheritance" title="PHP/class inheritance">وراثة الكائنات</a></span></h3>
+<p>وراثة الكائنات من المبادئ المعروفة في البرمجة كائنية التوجه وتستخدمه PHP في نموذج الكائنات الخاصّ بها. يؤثّر هذا المبدأ على العلاقة التي تربط بين الأصناف والكائنات.
+</p>
+<h3><span id="عامل_تحليل_النطاق_(::)"></span><span class="mw-headline" id=".D8.B9.D8.A7.D9.85.D9.84_.D8.AA.D8.AD.D9.84.D9.8A.D9.84_.D8.A7.D9.84.D9.86.D8.B7.D8.A7.D9.82_.28::.29"><a href="/PHP/scope_operator" title="PHP/scope operator">عامل تحليل النطاق (::)</a></span></h3>
+<p>يسمح عامل تحليل النطاق (Scope Resolution Operator) بالوصول إلى الخاصيات والتوابع من نوع static، أو المتجاوز عليها أو الثوابت الخاصة بصنف معين.
+</p>
+<h3><span id="الكلمة_المفتاحية_Static"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.83.D9.84.D9.85.D8.A9_.D8.A7.D9.84.D9.85.D9.81.D8.AA.D8.A7.D8.AD.D9.8A.D8.A9_Static"><a href="/PHP/static" title="PHP/static">الكلمة المفتاحية Static</a></span></h3>
+<p>يمكن استخدام static أيضًا لتعريف&nbsp;<a href="/PHP/variables_scope" title="PHP/variables scope">المتغيرات الساكنة</a>&nbsp;و<a href="/PHP/late_static_bindings" title="PHP/late static bindings">الروابط الساكنة اللاحقة</a>&nbsp;(late static bindings).
+</p>
+<h3><span id="تجريد_الأصناف"></span><span class="mw-headline" id=".D8.AA.D8.AC.D8.B1.D9.8A.D8.AF_.D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81"><a href="/PHP/abstract" title="PHP/abstract">تجريد الأصناف</a></span></h3>
+<p>يقدّم الإصدار الخامس من اللغة الأصناف والتوابع المجرّدة. لا يمكن تهيئة الأصناف المجرّدة، وإذا احتوى الصنف على تابع مجرّد واحدٍ على الأقل فيجب أن يكون الصنف مجردًا أيضًا. تصرّح الأصناف المجرّدة ببساطة عن توقيع التابع (method's signature)، ولا يمكنها تعريف الاستخدام (implementation).
+</p>
+<h3><span id="واجهات_الكائنات"></span><span class="mw-headline" id=".D9.88.D8.A7.D8.AC.D9.87.D8.A7.D8.AA_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><a href="/PHP/interfaces" title="PHP/interfaces">واجهات الكائنات</a></span></h3>
+<p>تتيح واجهات الكائنات إنشاء شيفرة تحدّد التوابع التي يجب أن يتضمّنها الصنف دون الحاجة إلى تعريف آلية التحكّم في هذه التوابع.
+</p><p>تعرّف الواجهات بنفس طريقة تعريف الأصناف، ولكن باستخدام الكلمة المفتاحية interface بدل الكلمة المفتاحية class ودون تعريف محتوى أيّ تابعٍ في الواجهة.
+</p>
+<h3><span id="السمات"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.B3.D9.85.D8.A7.D8.AA"><a href="/PHP/traits" title="PHP/traits">السمات</a></span></h3>
+<p>تعدّ السمات طريقة لإعادة استخدام الشيفرة في اللغات التي لا تدعم الوراثة المتعددة مثل PHP. وتهدف السمات إلى إزالة بعض القيود التي تفرضها الوراثة المفردة وذلك بتمكين المطوّر من استخدام مجموعة من التوابع بحرية في عدد من الأصناف المستقلة عن بعضها في هيكلية أصناف مختلفة. وتحمل كلّ من السمات والأصناف دلالات تهدف إلى التقليل من التعقيد وتجنب المشاكل الشائعة التي ترتبط بالوراثة المتعددة والدوال المساعدة Mixins.
+</p>
+<h3><span id="الأصناف_المجهولة"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.A3.D8.B5.D9.86.D8.A7.D9.81_.D8.A7.D9.84.D9.85.D8.AC.D9.87.D9.88.D9.84.D8.A9"><a href="/PHP/anonymous_classes" title="PHP/anonymous classes">الأصناف المجهولة</a></span></h3>
+<p>أضيف دعم الأصناف المجهولة إلى الإصدار السابع من PHP، وهذا النوع من الأصناف مفيد عند الحاجة إلى إنشاء نسخة واحدة بسيطة من الصنف.
+</p>
+<h3><span id="التحميل_الزائد"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AA.D8.AD.D9.85.D9.8A.D9.84_.D8.A7.D9.84.D8.B2.D8.A7.D8.A6.D8.AF"><a href="/PHP/overloading" title="PHP/overloading">التحميل الزائد</a></span></h3>
+<p>تقديم ميزة التحميل الزائد في PHP القدرة على إنشاء الخصائص والتوابع بصورة ديناميكية، وتعالج هذه العناصر الديناميكية بواسطة التوابع السحرية (magic methods) التي يمكن استخدامها في الصنف لأداء العديد من الوظائف.
+</p>
+<h3><span class="mw-headline" id="Object_Iteration"><a href="/PHP/object_iteration" title="PHP/object iteration">Object Iteration</a></span></h3>
+<p>يقدّم الإصدار الخامس من اللغة طريقة لتعريف العناصر ليكون بالإمكان المرور على قائمة من العناصر باستخدام العبارة&nbsp;<code><a href="/PHP/foreach" title="PHP/foreach">foreach</a></code>&nbsp;على سبيل المثال، وتستخدم جميع&nbsp;<a href="/PHP/properties_visibility" title="PHP/properties visibility">الخصائص المرئية</a>&nbsp;بصورة افتراضية لعملية المرور على العناصر.
+</p>
+<h3><span id="التوابع_السحرية"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AA.D9.88.D8.A7.D8.A8.D8.B9_.D8.A7.D9.84.D8.B3.D8.AD.D8.B1.D9.8A.D8.A9"><a href="/PHP/magic" title="PHP/magic">التوابع السحرية</a></span></h3>
+<p>التوابع السحرية في أصناف PHP هي&nbsp;<code>‎__construct()</code>‎ و&nbsp;<code>‎__destruct()</code>‎ و&nbsp;<code>‎__call()</code>‎ و&nbsp;<code>‎__callStatic()</code>‎ و&nbsp;<code>‎__get()</code>‎ و&nbsp;<code>‎__set()‎</code>&nbsp;و ‎<code>__isset()</code>‎ و ‎<code>__unset()‎‎</code>&nbsp;و<code>‎__sleep()</code>‎ و ‎<code>__wakeup()</code>‎ و&nbsp;<code>‎__toString()‎</code>&nbsp;و ‎<code>__invoke()‎</code>&nbsp;و ‎<code>_‎_set_state()‎</code>&nbsp;و ‎<code>__clone()</code>‎ و&nbsp;<code>‎__debugInfo()</code>‎. ولا يمكنك استخدام دوالّ تحمل هذه الأسماء في أي صنف ما لم تكن ترغب في الاستفادة من الوظيفة السحرية التي تتمتّع بها.
+</p>
+<h3><span id="الكلمة_المفتاحية_final"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.83.D9.84.D9.85.D8.A9_.D8.A7.D9.84.D9.85.D9.81.D8.AA.D8.A7.D8.AD.D9.8A.D8.A9_final"><a href="/PHP/final" title="PHP/final">الكلمة المفتاحية final</a></span></h3>
+<p>قدّم الإصدار الخامس من اللغة الكلمة المفتاحية final والتي تمنع الأصناف الأبناء من التجاوز على توابع الصنف الأب وذلك بإضافة الكلمة المفتاحية قبل عبارة تعريف التابع. إذا استُخدمت الكلمة المفتاحية&nbsp;<code>final</code>&nbsp;في تعريف الصنف فإنّه يصبح غير قابل للتوسع.
+</p>
+<h3><span id="استنساخ_الكائنات"></span><span class="mw-headline" id=".D8.A7.D8.B3.D8.AA.D9.86.D8.B3.D8.A7.D8.AE_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><a href="/PHP/cloning_objects" title="PHP/cloning objects">استنساخ الكائنات</a></span></h3>
+<p>أي نسخ الكائن مع خاصياته كلها.
+</p>
+<h3><span id="مقارنة_الكائنات"></span><span class="mw-headline" id=".D9.85.D9.82.D8.A7.D8.B1.D9.86.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA"><a href="/PHP/object_comparison" title="PHP/object comparison">مقارنة الكائنات</a></span></h3>
+<p>يمكن إجراء مقارنة بسيطة بين متغيرات الكائنات باستخدام عامل المقارنة (==)، وتكون نسختا الكائن متساويتين إن كانتا تملكان نفس المعاملات ونفس القيم (تقارن القيم باستخدام ====) وكانتا نسختين لنفس الصنف.
+</p><p>عند استخدام عامل التطابق (===) تكون متغيرات الكائنات متطابقة عندما تشير فقط وفقط إذا إلى النسخة نفسها من الصنف نفسه.
+</p>
+<h3><span id="التلميح_عن_الأنواع"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.AA.D9.84.D9.85.D9.8A.D8.AD_.D8.B9.D9.86_.D8.A7.D9.84.D8.A3.D9.86.D9.88.D8.A7.D8.B9"><a href="/PHP/typehinting" class="mw-redirect" title="PHP/typehinting">التلميح عن الأنواع</a></span></h3>
+<p>تسمح خاصية التصريح عن الأنواع للدوال بطلب النوع المحدّد من المعاملات في وقت الاستدعاء، وإن كانت القيمة المستدعاة ذات نوع مغاير، تطلق اللغة خطأ من نوع recoverable fatal في الإصدار 5، أما في الإصدار 7 فترمي اللغة استثناءً من نوع&nbsp;<code>TypeError</code>.
+</p><p>ولتحديد النوع الذي ترغب في التصريح عنه، يجب إضافة اسم النوع قبل اسم المعامل، ويمكن قبول قيم NULL وذلك بتعيين NULL كقيمة افتراضية للمعاملات.
+</p>
+<h3><span id="الروابط_الساكنة_المتأخرة"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.B1.D9.88.D8.A7.D8.A8.D8.B7_.D8.A7.D9.84.D8.B3.D8.A7.D9.83.D9.86.D8.A9_.D8.A7.D9.84.D9.85.D8.AA.D8.A3.D8.AE.D8.B1.D8.A9"><a href="/PHP/late_static_bindings" title="PHP/late static bindings">الروابط الساكنة المتأخرة</a></span></h3>
+<p>تضمن الإصدار 5.3.0 من PHP خاصية تدعى بالروابط الساكنة المتأخرة (late static bindings) والتي يمكن استخدامها للإشارة إلى الصنف المستدعى في سياق وراثة ساكنة.
+</p>
+<h3><span id="الكائنات_والمراجع"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86.D8.A7.D8.AA_.D9.88.D8.A7.D9.84.D9.85.D8.B1.D8.A7.D8.AC.D8.B9"><a href="/PHP/objects_references" title="PHP/objects references">الكائنات والمراجع</a></span></h3>
+<p>المرجع في PHP هو اختصار يتيح لمتغيرين مختلفين الكتابة إلى القيمة ذاتها. ومنذ الإصدار الخامس من اللغة، لم يعد متغير الكائن يتضمّن الكائن نفسه كقيمة على الإطلاق، بل يتضمّن فقط معرّفًا للكائن يتيح الوصول إلى الكائن الحقيقي. وعند تمرير الكائن كمعامل أو إعادته أو إسناده إلى متغير آخر، لا تكون هذه المتغيرات أسماء بديلة (aliases) بل تحمل نسخة من المعرّف الذي يشير إلى الكائن نفسه.
+</p>
+<h3><span id="سَلسَلة_الكائن"></span><span class="mw-headline" id=".D8.B3.D9.8E.D9.84.D8.B3.D9.8E.D9.84.D8.A9_.D8.A7.D9.84.D9.83.D8.A7.D8.A6.D9.86"><a href="/PHP/serialization" title="PHP/serialization">‎سَلسَلة الكائن</a></span></h3>
+<p>تعيد الدالة&nbsp;<code>serialize()‎‎</code>&nbsp;سلسلة نصية تتضمّن تمثيلًا لتدفق البايتات لأي قيمة يمكن تخزينها في PHP، ويمكن للدالة&nbsp;<code>unseriazlie()‎</code>&nbsp;استخدام هذه السلسلة النصية لإعادة إنشاء القيمة الأصلية للمتغيّر. يؤدي تطبيق الدالة&nbsp;<code>serialize()‎</code>&nbsp;على كائن ما لحفظ جميع المتغيرات الخاصة بذلك الكائن، أما التوابع فلا تحفظ وإنّما يحفظ اسم الصنف فقط.
+</p>
+<h3><span id="سجل_التغييرات"></span><span class="mw-headline" id=".D8.B3.D8.AC.D9.84_.D8.A7.D9.84.D8.AA.D8.BA.D9.8A.D9.8A.D8.B1.D8.A7.D8.AA"><a href="/PHP/OOP" title="PHP/OOP">سجل التغييرات</a></span></h3>
+<p>تعرض الصفحة سجلّ التغييرات الحاصلة على نموذج البرمجة كائنية التوجه في الإصدار الخامس من اللغة.
+</p>
+<h2><span id="مجالات_الأسماء"></span><span class="mw-headline" id=".D9.85.D8.AC.D8.A7.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.A3.D8.B3.D9.85.D8.A7.D8.A1"><a href="/PHP/namespaces" title="PHP/namespaces">مجالات الأسماء</a></span></h2>
+<p>شرح طريقة تعريف مجالات الأسماء الأساسية والفرعية، وكيفية استخدامها، مع إجابة عن التساؤلات الشائعة.
+</p>
+<h2><span id="الأخطاء"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.A3.D8.AE.D8.B7.D8.A7.D8.A1"><a href="/PHP/errors" title="PHP/errors">الأخطاء</a></span></h2>
+<p>تبلغ PHP عن الأخطاء والتحذيرات والملاحظات التي تحدث بسبب المشاكل الحاصلة في وقت التشغيل، وتصبح عملية تنقيح الأخطاء (Debugging) أكثر سهولة عند معرفة كيفية الكشف عن هذه الأخطاء والتعامل معها.
+</p>
+<h2><span id="الاستثناءات"></span><span class="mw-headline" id=".D8.A7.D9.84.D8.A7.D8.B3.D8.AA.D8.AB.D9.86.D8.A7.D8.A1.D8.A7.D8.AA"><a href="/PHP/exceptions" title="PHP/exceptions">الاستثناءات</a></span></h2>
+<p>يتضمّن الإصدار الخامس من PHP نموذج استثناءات مشابهًا للغات البرمجية الأخرى.
+</p>
+<h2><span id="المولدات"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D9.88.D9.84.D8.AF.D8.A7.D8.AA"><a href="/PHP/generators" title="PHP/generators">المولدات</a></span></h2>
+<p>تقدّم المولِّدات (Generators) طريقة سهلة لاستخدام المكرِّرات (Iterators) البسيطة دون الدخول في تعقيدات استخدام صنف يطبّق الواجهة Iterator.
+</p>
+<h2><span id="المراجع"></span><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.B1.D8.A7.D8.AC.D8.B9"><a href="/PHP/references" title="PHP/references">المراجع</a></span></h2>
+<p>المراجع (references) في PHP هي وسيلة للوصول إلى محتوى المتغير نفسه باستخدام أسماء مختلفة.
+</p>
+<h2><span id="مصادر"></span><span class="mw-headline" id=".D9.85.D8.B5.D8.A7.D8.AF.D8.B1">مصادر</span></h2>
+<p>هذا الدليل مستقى من <a rel="nofollow" class="external text" href="http://php.net/manual/en/">توثيق PHP الرسمي</a>.
+</p><p><br>
+</p>
+<!-- Saved in parser cache with key wiki:pcache:idhash:610-0!canonical and timestamp 20211129100322 and revision id 29918
+ -->
+</div>
+				<script>
+				var sectionsConfig = {
+					id: "megamenu",
+					width: "100%",
+					align: "left",
+					rows: [
+    {
+        "columns": [
+            {
+                "control": {
+                    "type": "bullets",
+                    "config": {
+                        "text": "البدء مع PHP",
+                        "url": "#",
+                        "items": [
+                            {
+                                "text": "بنية اللغة",
+                                "url": "/PHP/basic_syntax"
+                            },
+                            {
+                                "text": "الضبط",
+                                "url": "/PHP/configuration"
+                            },
+                            {
+                                "text": "أنواع البيانات",
+                                "url": "/PHP/Types"
+                            },
+                            {
+                                "text": "المتغيرات",
+                                "url": "/PHP/variables"
+                            },
+                            {
+                                "text": "الثوابت",
+                                "url": "/PHP/constants"
+                            },
+                            {
+                                "text": "المعاملات",
+                                "url": "/PHP/Operators"
+                            },
+                            {
+                                "text": "التعابير",
+                                "url": "/PHP/expressions"
+                            },
+                            {
+                                "text": "بنى التحكم",
+                                "url": "/PHP/Control_Structures"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "control": {
+                    "type": "bullets",
+                    "config": {
+                        "text": "الدوال",
+                        "url": "/%D8%AA%D8%B5%D9%86%D9%8A%D9%81:PHP_Function",
+                        "items": [
+                            {
+                                "text": "الدوال المعرَّفة من طرف المستخدم",
+                                "url": "/PHP/user_defined_functions"
+                            },
+                            {
+                                "text": "معاملات الدوال",
+                                "url": "/PHP/function_arguments"
+                            },
+                            {
+                                "text": "إعادة القيم",
+                                "url": "/PHP/returning_values"
+                            },
+                            {
+                                "text": "الدوال المتغيرة",
+                                "url": "/PHP/variable_functions"
+                            },
+                            {
+                                "text": "الدوال الداخلية",
+                                "url": "/PHP/internal_functions"
+                            },
+                            {
+                                "text": "الدوال المجهولة",
+                                "url": "/PHP/anonymous_functions"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "control": {
+                    "type": "bullets",
+                    "config": {
+                        "text": "البرمجة كائنية التوجه",
+                        "url": "/%D8%AA%D8%B5%D9%86%D9%8A%D9%81:PHP_OOP",
+                        "items": [
+                            {
+                                "text": "الخاصيات",
+                                "url": "/PHP/properties"
+                            },
+                            {
+                                "text": "ثوابت الأصناف",
+                                "url": "/PHP/class_constants"
+                            },
+                            {
+                                "text": "التحميل التلقائي للأصناف",
+                                "url": "/PHP/autoloading"
+                            },
+                            {
+                                "text": "التوابع البانية والهادمة",
+                                "url": "/PHP/decon"
+                            },
+                            {
+                                "text": "قابلية الرؤية",
+                                "url": "/PHP/properties_visibility"
+                            },
+                            {
+                                "text": "وراثة الكائنات",
+                                "url": "/PHP/class_inheritance"
+                            },
+                            {
+                                "text": "التوابع السحرية",
+                                "url": "/PHP/magic"
+                            },
+                            {
+                                "text": "استنساخ الكائنات",
+                                "url": "/PHP/cloning_objects"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "control": {
+                    "type": "bullets",
+                    "config": {
+                        "text": "مواضيع متقدمة",
+                        "url": "#",
+                        "items": [
+                            {
+                                "text": "مجالات الأسماء",
+                                "url": "/PHP/namespaces"
+                            },
+                            {
+                                "text": "الأخطاء",
+                                "url": "/PHP/errors"
+                            },
+                            {
+                                "text": "المولدات",
+                                "url": "/PHP/generators"
+                            },
+                            {
+                                "text": "المراجع",
+                                "url": "/PHP/references"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+]
+				}
+				</script>
+			</div><div class="printfooter">مجلوبة من "<a dir="ltr" href="https://wiki.hsoub.com/index.php?title=PHP&amp;oldid=29918">https://wiki.hsoub.com/index.php?title=PHP&amp;oldid=29918</a>"</div>
+	</div>
+</div>
+
+<!-- ========================================================================== -->
+
+
+<script src="https://www.w3schools.com/lib/w3schools_footer.js?update=20210902"></script>
+
+<script>
+
+loadUser();
+//activateElse();
+function loadUser() {
+  if (!MyLearning.userIsLoggedIn()) {
+    console.log("CAT");
+    activateElse();
+    return false;
+  }
+  var x, y, pos, foldername, filename, typ, pathname = window.location.pathname;
+  if (pathname.substr(0,1) == "/") {pathname = pathname.substr(1);}
+  pos = pathname.indexOf("/");
+  foldername = pathname.substr(0, pos);
+  if (pathname.indexOf("pandas") > -1) {foldername = "python/pandas";}
+  if (pathname.indexOf("numpy") > -1) {foldername = "python/numpy";}
+  if (pathname.indexOf("scipy") > -1) {foldername = "python/scipy";}
+  filename = pathname.substr(pos + 1);
+  typ = foldername;
+  if (foldername == "quiztest") {
+    cc = window.location.href;
+    pos = cc.indexOf("qtest=");
+    typ = cc.substr(pos + 6);
+  }
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      if (this.status == 0) {
+        console.log("ZZ");
+        activateElse();
+      } else if (this.status == 401) {
+        console.log("A2");
+        activateElse();
+ } else if (this.status == 200) {
+        y = this.responseText;
+        x = y.substr(0, 1);
+        if (x == "A" || x == "B" || x == "C" || x == "D" || x == "E") {
+          console.log(x);
+          activateElse();
+        } else if (x == "F" || x == "G" || x == "H" || x == "I" || x == "J" || x == "K"  || x == "L" || x == "M" || x == "Q") {
+          console.log(x);
+          activateMYPAGE(x, y);
+        } else {
+          activateElse();
+          console.log("Z");
+        }
+      }
+    }
+  };
+  xhttp.open("POST", MyLearning.getUrl('api.meta'), true);
+//xhttp.open("POST", "https://mypage.w3schools.com/mypage/beta.php", true);
+  xhttp.withCredentials = true;
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("a=" + foldername + "&b=" + filename + "&c=" + typ + "&d=0");
+}
+function finishedPage() {
+  if (!MyLearning.userIsLoggedIn()) {
+    return false;
+  }
+  var x, y, pos, foldername, filename, typ, pathname = window.location.pathname;
+  if (pathname.substr(0,1) == "/") {pathname = pathname.substr(1);}
+  pos = pathname.indexOf("/");
+  foldername = pathname.substr(0, pos);
+  if (pathname.indexOf("pandas") > -1) {foldername = "python/pandas";}
+  if (pathname.indexOf("numpy") > -1) {foldername = "python/numpy";}
+  if (pathname.indexOf("scipy") > -1) {foldername = "python/scipy";}
+  filename = pathname.substr(pos + 1);
+  typ = foldername;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      y = this.responseText;
+      x = y.substr(0, 1);
+      if (x == "O") {
+        registerPoint(x);
+      } else {
+        console.log("Z");
+      }
+    }
+  };
+  xhttp.open("POST", MyLearning.getUrl('api.meta'), true);
+//xhttp.open("POST", "https://mypage.w3schools.com/mypage/beta.php", true);
+  xhttp.withCredentials = true;
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("a=" + foldername + "&b=" + filename + "&c=" + typ + "&d=1");
+}
+function activateElse() {
+  var a = document.getElementById("mypagediv");
+  var b = document.getElementById("w3loginbtn");
+  if (a) a.style.display = "none";
+  if (b) b.style.display = "inline";
+}
+var mp_pagesread = 0, mp_totalpages = 0;
+function activateMYPAGE(cc, obj) {
+  var x, degrees = 0, txt = "", txt2 = "", color1 = "rgba(76, 175, 80, 0.1)", color2 = "rgba(76, 175, 80, 1)";
+  var a = document.getElementById("w3loginbtn");
+  var b = document.getElementById("mypagediv");
+  var c = document.getElementById("mypagediv2");
+  if (a) a.style.display = "none";
+  if (b) {
+    if (cc == "I" || cc == "J" || cc == "O" || cc == "Q") {
+      jsonobj = JSON.parse(obj.substr(1));
+      mp_pagesread = jsonobj.b;
+      mp_totalpages = jsonobj.a;
+      x = Math.round((mp_pagesread/mp_totalpages) * 100);
+      degrees = x * 3.6;
+      if (degrees > 359) degrees = 359.99;
+    }
+    if (cc == "Q") {
+      color1 = "rgba(44, 156, 202, 0.1)";
+      color2 = "rgba(44, 156, 202, 1)";
+    }
+    b.style.display = "block";
+    txt += "<a href='https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com%2F'>";
+//  txt += "<a href='https://mypage.w3schools.com/mypage/default.php'>";
+    txt2 = txt;
+    txt += "<img src='/images/mypagelogo32x32.png' alt='MYPAGE' style='position:absolute;top:18px;right:28px'>";
+    txt2 += "<img src='/images/mypagelogo32x32.png' alt='MYPAGE' style='position:absolute;top:18px;margin-left:10px;xright:28px'>";
+    if (cc != "F") {
+      txt += '<svg style="position:absolute;top:0;right:0;height:70px;width:70px">';
+      txt += '<path id="mypage_circle1" fill="none" stroke="' + color1 + '" stroke-width="4"/>';
+      txt += '<path id="mypage_circle2" fill="none" stroke="' + color2 + '" stroke-width="4"/>';
+      txt += '</svg>';
+      txt2 += '<svg style="position:absolute;xtop:0;xright:0;height:70px;width:70px">';
+      txt2 += '<path id="mypage2_circle1" fill="none" stroke="' + color1 + '" stroke-width="4"/>';
+      txt2 += '<path id="mypage2_circle2" fill="none" stroke="' + color2 + '" stroke-width="4"/>';
+      txt2 += '</svg>';
+    }
+    if (cc == "J") {
+      checkIfMypage2IsInView();
+      window.addEventListener("scroll", checkIfMypage2IsInView);
+    }
+    if (cc == "Q") {
+      if (degrees == 359.99) {
+        txt += "<span id='usergetsstar'>&#x2605;</span>";
+      }
+    }
+    txt += '</a>';
+    txt2 += '</a>';
+    b.innerHTML = "&nbsp;" + txt;
+    c.innerHTML = "&nbsp;" + txt2;
+    if (cc != "L") {
+      document.getElementById("mypage_circle1").setAttribute("d", loginDrawCircle(26, 35, 24, 0, 359.99));
+      document.getElementById("mypage_circle2").setAttribute("d", loginDrawCircle(26, 35, 24, 0, degrees));
+      document.getElementById("mypage2_circle1").setAttribute("d", loginDrawCircle(26, 35, 24, 0, 359.99));
+      document.getElementById("mypage2_circle2").setAttribute("d", loginDrawCircle(26, 35, 24, 0, degrees));
+    }
+  }
+
+  ga('send', 'event', 'user', 'login');
+}
+function checkIfMypage2IsInView() {
+  var a = document.getElementById("mypagediv2");
+  if (isinviewport(a) || isaboveviewport(a)) {
+    finishedPage();
+    window.removeEventListener("scroll", checkIfMypage2IsInView);
+  }
+}
+function isinviewport(x) {
+  var rect = x.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+  );
+}
+function isaboveviewport(x) {
+  var rect = x.getBoundingClientRect();
+  if (rect.top < 0) return true;
+  return false;
+}
+function registerPoint(cc) {
+  var x, degrees = 0, txt = "", txt2 = "", completed = 0, color1 = "rgba(76, 175, 80, 0.1)", color2 = "rgba(76, 175, 80, 1)";
+  var a = document.getElementById("w3loginbtn");
+  var b = document.getElementById("mypagediv");
+  var c = document.getElementById("mypagediv2");
+  if (c) {
+    mp_pagesread++;
+    x = Math.round((mp_pagesread/mp_totalpages) * 100);
+    degrees = x * 3.6;
+    if (degrees > 359) degrees = 359.99;
+    txt += "<span class='usergetspoint' id='usergetstutpoint'>+1</span>";
+    if (degrees == 359.99) {completed = 1;}
+    if (completed == 1) {
+      txt += "<span id='usergetsstar'>&#x2605;</span>";
+    }
+    c.innerHTML += txt;
+    document.getElementById("mypage_circle1").setAttribute("d", loginDrawCircle(26, 35, 24, 0, 359.99));
+    document.getElementById("mypage_circle2").setAttribute("d", loginDrawCircle(26, 35, 24, 0, degrees));
+    document.getElementById("mypage2_circle1").setAttribute("d", loginDrawCircle(26, 35, 24, 0, 359.99));
+    document.getElementById("mypage2_circle2").setAttribute("d", loginDrawCircle(26, 35, 24, 0, degrees));
+  }
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

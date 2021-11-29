@@ -313,6 +313,8 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 .topnav a{
 padding:10px 15px 9px 15px !important;
+color:#f1f1f1;
+
 }
 .topnav .w3-bar a:hover,.topnav .w3-bar a:focus{
 background-color:#000000 !important;
@@ -1739,5 +1741,38 @@ h3 {
   background-color: #fff08060; 
   color: rgb(255, 255, 255);
   font-size: 20px;
+
+}
+
+.A{
+  background-color: #0059ff
+}
+.toclevel-1{
+ color: #fa06d1; 
+}
+.tocsection-2{
+}
+.toctext{
+  color: #fa0606; 
+
+}
+
+.mw-headline{
+  background-color: #00ffff;
+  color: #0228fc;
+  padding: 20px;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+             box-sizing: 15px;
+}
+
+.toc{
+  box-shadow:
+  inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+        box-sizing: 15px;
 
 }
